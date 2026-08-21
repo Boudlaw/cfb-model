@@ -1,0 +1,71 @@
+name: Weekly CFB snapshot archive
+
+# Tuesdays at 12:00 UTC (8:00 AM Eastern) during the season, August through January.
+# Tuesday is deliberate: published research finds the model edge exists against the
+# OPENING line and vanishes by midweek, so the capture has to land early.
+on:
+  schedule:
+    - cron: "0 12 * 8,9,10,11,12,1 2"
+  workflow_dispatch:
+    inputs:
+      season:
+        description: "Season (blank = infer)"
+        required: false
+      week:
+        description: "Week (blank = infer)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Smoke test the sources
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python cfb_archive/archive.py --smoke
+
+      - name: Capture snapshot
+        id: capture
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: |
+          set +e
+          python cfb_archive/archive.py \
+            ${{ inputs.season && format('--season {0}', inputs.season) || '' }} \
+            ${{ inputs.week && format('--week {0}', inputs.week) || '' }}
+          echo "rc=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Commit the archive
+        run: |
+          git config user.name  "cfb-archive"
+          git config user.email "actions@github.com"
+          git add archive/
+          if git diff --cached --quiet; then
+            echo "nothing new to commit"
+          else
+            git commit -m "archive: snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      # Exit code 2 means an unrecoverable source failed. Those captures cannot be
+      # backfilled, so the run must go red and send the usual GitHub failure email
+      # rather than passing quietly with a hole in the data.
+      - name: Fail loudly on unrecoverable gaps
+        if: steps.capture.outputs.rc == '2'
+        run: |
+          echo "::error::A critical source failed. This week cannot be backfilled."
+          tail -5 archive/manifest.csv || true
+          exit 1

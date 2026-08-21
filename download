@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+# The archive itself is committed on purpose - it is the whole point of the repo.
+# Never add archive/ here.
