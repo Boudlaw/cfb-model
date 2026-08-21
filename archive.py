@@ -77,8 +77,8 @@ RAW_DIR = ARCHIVE_DIR / "raw"
 MANIFEST = ARCHIVE_DIR / "manifest.csv"
 
 USER_AGENT = "cfb-archive/1.0 (personal research; contact mailbox@boudreaulaw.com)"
-TIMEOUT = 45
-RETRIES = 3
+TIMEOUT = int(os.environ.get("CFB_TIMEOUT", "45"))
+RETRIES = int(os.environ.get("CFB_RETRIES", "3"))
 RETRY_BACKOFF = 4  # seconds, multiplied by attempt number
 
 
@@ -117,7 +117,12 @@ def http_get(url: str, headers: dict[str, str] | None = None) -> bytes:
             last = e
         if attempt < RETRIES:
             time.sleep(RETRY_BACKOFF * attempt)
-    raise RuntimeError(f"GET failed after {RETRIES} attempts: {url}") from last
+    # Surface the underlying cause. "GET failed" on its own is not diagnosable from
+    # a committed log file, which is the only place this gets read from.
+    raise RuntimeError(
+        f"GET failed after {RETRIES} attempt(s): {url} — "
+        f"{type(last).__name__}: {last}"
+    ) from last
 
 
 def cfbd_get(path: str, params: dict[str, Any] | None = None) -> tuple[Any, bytes]:
@@ -359,9 +364,18 @@ def current_season_week(today: dt.date | None = None) -> tuple[int, int]:
 
 
 def smoke() -> int:
-    """Verify every endpoint answers and has the shape we expect. Writes nothing."""
+    """
+    Verify every endpoint answers and has the shape we expect. Writes nothing.
+
+    Fails fast on purpose: one attempt, short timeout. A diagnostic that takes ten
+    minutes to tell you a host is unreachable is not a diagnostic.
+    """
+    global RETRIES, TIMEOUT
+    RETRIES, TIMEOUT = 1, 20
     season, week = current_season_week()
-    log(f"smoke test — season {season}, week {week}")
+    log(f"smoke test — season {season}, week {week} (python {sys.version.split()[0]})")
+    log(f"archive dir would be: {ARCHIVE_DIR}")
+    log(f"CFBD_API_KEY: {'set, ' + str(len(os.environ.get('CFBD_API_KEY', ''))) + ' chars' if os.environ.get('CFBD_API_KEY') else 'MISSING'}")
     checks = [
         ("CFBD /teams/fbs", lambda: cfbd_get("/teams/fbs", {"year": season})),
         ("CFBD /ratings/sp", lambda: cfbd_get("/ratings/sp", {"year": season})),
