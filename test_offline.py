@@ -8,7 +8,13 @@ from pathlib import Path
 
 TMP = tempfile.mkdtemp(prefix="cfbtest_")
 os.environ["CFB_ARCHIVE_DIR"] = TMP
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "cfb_archive"))
+_here = Path(__file__).resolve().parent
+for _cand in (_here, _here / "cfb_archive", _here.parent, _here.parent / "cfb_archive"):
+    if (_cand / "archive.py").exists():
+        sys.path.insert(0, str(_cand))
+        break
+else:
+    sys.exit("could not locate archive.py next to or above this test file")
 
 import archive as A  # noqa: E402
 

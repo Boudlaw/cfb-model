@@ -54,7 +54,25 @@ CFBD_BASE = "https://api.collegefootballdata.com"
 SONNY_MOORE_URL = "https://sonnymoorepowerratings.com/col-foot.htm"
 PIRATE_URL = "https://piratings.wordpress.com/"
 
-ARCHIVE_DIR = Path(os.environ.get("CFB_ARCHIVE_DIR", Path(__file__).resolve().parent.parent / "archive"))
+def _default_archive_dir() -> Path:
+    """
+    Resolve where the archive lives, without caring how the repo is laid out.
+    Order: explicit env var -> nearest git repo root -> the script's own directory.
+    This has to work whether archive.py sits at the repo root or in a subpackage.
+    """
+    env = os.environ.get("CFB_ARCHIVE_DIR", "").strip()
+    if env:
+        return Path(env)
+    here = Path(__file__).resolve().parent
+    for cand in (here, *here.parents):
+        if (cand / ".git").exists():
+            return cand / "archive"
+    if here.name == "cfb_archive":
+        return here.parent / "archive"
+    return here / "archive"
+
+
+ARCHIVE_DIR = _default_archive_dir()
 RAW_DIR = ARCHIVE_DIR / "raw"
 MANIFEST = ARCHIVE_DIR / "manifest.csv"
 
