@@ -35,7 +35,7 @@ jobs:
       - name: Smoke test the sources
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
-        run: python cfb_archive/archive.py --smoke
+        run: python archive.py --smoke
 
       - name: Capture snapshot
         id: capture
@@ -43,7 +43,7 @@ jobs:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: |
           set +e
-          python cfb_archive/archive.py \
+          python archive.py \
             ${{ inputs.season && format('--season {0}', inputs.season) || '' }} \
             ${{ inputs.week && format('--week {0}', inputs.week) || '' }}
           echo "rc=$?" >> "$GITHUB_OUTPUT"
