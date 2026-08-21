@@ -22,9 +22,13 @@ concurrency:
   group: weekly-archive
   cancel-in-progress: false
 
+env:
+  CFB_ARCHIVE_DIR: ${{ github.workspace }}/archive
+
 jobs:
   archive:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -32,40 +36,77 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Everything below tees into archive/logs/ and the log is committed even when
+      # the run fails. A failure that leaves no trace in the repo is undiagnosable
+      # from outside GitHub, which is where the diagnosis actually happens.
+      - name: Prepare log
+        run: |
+          mkdir -p archive/logs
+          echo "LOGFILE=archive/logs/run-$(date -u +%Y%m%dT%H%M%SZ).log" >> "$GITHUB_ENV"
+
+      - name: Environment
+        continue-on-error: true
+        run: |
+          {
+            echo "=== environment ==="
+            echo "run_id      : ${{ github.run_id }}"
+            echo "triggered by: ${{ github.event_name }}"
+            echo "python      : $(python --version 2>&1)"
+            echo "workspace   : ${{ github.workspace }}"
+            echo "key present : ${{ secrets.CFBD_API_KEY != '' }}"
+            echo "--- repo root ---"
+            ls -la
+          } 2>&1 | tee -a "$LOGFILE"
+
       - name: Smoke test the sources
+        id: smoke
+        continue-on-error: true
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
-        run: python archive.py --smoke
+        run: |
+          echo "=== smoke ===" | tee -a "$LOGFILE"
+          set -o pipefail
+          python archive.py --smoke 2>&1 | tee -a "$LOGFILE"
 
       - name: Capture snapshot
         id: capture
+        continue-on-error: true
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: |
+          echo "=== capture ===" | tee -a "$LOGFILE"
           set +e
           python archive.py \
             ${{ inputs.season && format('--season {0}', inputs.season) || '' }} \
-            ${{ inputs.week && format('--week {0}', inputs.week) || '' }}
-          echo "rc=$?" >> "$GITHUB_OUTPUT"
+            ${{ inputs.week && format('--week {0}', inputs.week) || '' }} \
+            2>&1 | tee -a "$LOGFILE"
+          rc=${PIPESTATUS[0]}
+          echo "archive.py exit code: $rc" | tee -a "$LOGFILE"
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
 
-      - name: Commit the archive
+      # if: always() so a failed run still leaves its log in the repo.
+      - name: Commit the archive and log
+        if: always()
         run: |
           git config user.name  "cfb-archive"
           git config user.email "actions@github.com"
-          git add archive/
+          git add -A archive/
           if git diff --cached --quiet; then
             echo "nothing new to commit"
           else
-            git commit -m "archive: snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+            git commit -m "archive: run ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase --autostash || true
             git push
           fi
 
-      # Exit code 2 means an unrecoverable source failed. Those captures cannot be
-      # backfilled, so the run must go red and send the usual GitHub failure email
-      # rather than passing quietly with a hole in the data.
-      - name: Fail loudly on unrecoverable gaps
-        if: steps.capture.outputs.rc == '2'
+      - name: Report outcome
+        if: always()
         run: |
-          echo "::error::A critical source failed. This week cannot be backfilled."
-          tail -5 archive/manifest.csv || true
-          exit 1
+          rc="${{ steps.capture.outputs.rc }}"
+          echo "smoke: ${{ steps.smoke.outcome }} | archive.py exit: ${rc:-<did not run>}"
+          case "$rc" in
+            0) echo "::notice::All sources captured." ;;
+            1) echo "::warning::Recoverable source(s) failed. Backfillable later." ;;
+            2) echo "::error::A source that CANNOT be backfilled failed. Check archive/logs/ and re-run today." ; exit 1 ;;
+            *) echo "::error::archive.py did not run to completion. See archive/logs/." ; exit 1 ;;
+          esac
