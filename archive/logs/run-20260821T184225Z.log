@@ -1,0 +1,48 @@
+=== environment ===
+run_id      : 32514699404
+triggered by: workflow_dispatch
+python      : Python 3.12.14
+workspace   : /home/runner/work/cfb-model/cfb-model
+key present : false
+--- repo root ---
+total 68
+drwxr-xr-x 5 runner runner  4096 Aug 21 18:42 .
+drwxr-xr-x 3 runner runner  4096 Aug 21 18:42 ..
+drwxr-xr-x 7 runner runner  4096 Aug 21 18:42 .git
+drwxr-xr-x 3 runner runner  4096 Aug 21 18:42 .github
+-rw-r--r-- 1 runner runner   156 Aug 21 18:42 .gitignore
+-rw-r--r-- 1 runner runner  4452 Aug 21 18:42 README.md
+-rw-r--r-- 1 runner runner  2699 Aug 21 18:42 SETUP.md
+drwxr-xr-x 3 runner runner  4096 Aug 21 18:42 archive
+-rw-r--r-- 1 runner runner 19676 Aug 21 18:42 archive.py
+-rw-r--r-- 1 runner runner   174 Aug 21 18:42 requirements.txt
+-rw-r--r-- 1 runner runner  4868 Aug 21 18:42 test_offline.py
+=== smoke ===
+[2026-08-21T18:42:25+00:00] smoke test — season 2026, week 1 (python 3.12.14)
+[2026-08-21T18:42:25+00:00] archive dir would be: /home/runner/work/cfb-model/cfb-model/archive
+[2026-08-21T18:42:25+00:00] CFBD_API_KEY: MISSING
+[2026-08-21T18:42:25+00:00]   FAIL CFBD /teams/fbs: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:25+00:00]   FAIL CFBD /ratings/sp: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:25+00:00]   FAIL CFBD /ratings/fpi: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:25+00:00]   FAIL CFBD /ratings/elo: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:25+00:00]   FAIL CFBD /ratings/srs: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:25+00:00]   FAIL CFBD /ratings/core: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:25+00:00]   FAIL CFBD /lines: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:25+00:00]   FAIL CFBD /games: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:25+00:00]   OK   Sonny Moore page  (20834 items/bytes)
+[2026-08-21T18:42:26+00:00]   OK   Pi-Rate page  (505128 items/bytes)
+[2026-08-21T18:42:26+00:00] smoke: 2/10 passed
+=== capture ===
+[2026-08-21T18:42:26+00:00] archiving season 2026 week 1 -> /home/runner/work/cfb-model/cfb-model/archive
+[2026-08-21T18:42:26+00:00]   FAIL sp_plus: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:26+00:00]   FAIL fpi: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:26+00:00]   FAIL lines: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:26+00:00]   FAIL elo: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:26+00:00]   FAIL srs: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:26+00:00]   FAIL core: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:26+00:00]   FAIL games: CFBD_API_KEY is not set. Get a free key at https://collegefootballdata.com/key
+[2026-08-21T18:42:26+00:00]   sonny_moore: +136 rows
+[2026-08-21T18:42:26+00:00]   pirate: +0 rows
+[2026-08-21T18:42:26+00:00] done: 136 rows, 7 failure(s)
+[2026-08-21T18:42:26+00:00] CRITICAL — unrecoverable sources failed: sp_plus, fpi, lines
+archive.py exit code: 2
