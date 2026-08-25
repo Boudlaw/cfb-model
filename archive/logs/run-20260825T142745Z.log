@@ -1,0 +1,47 @@
+=== environment ===
+run_id      : 32859627818
+triggered by: schedule
+python      : Python 3.12.14
+workspace   : /home/runner/work/cfb-model/cfb-model
+key present : true
+--- repo root ---
+total 68
+drwxr-xr-x 5 runner runner  4096 Aug 25 14:27 .
+drwxr-xr-x 3 runner runner  4096 Aug 25 14:27 ..
+drwxr-xr-x 7 runner runner  4096 Aug 25 14:27 .git
+drwxr-xr-x 3 runner runner  4096 Aug 25 14:27 .github
+-rw-r--r-- 1 runner runner   156 Aug 25 14:27 .gitignore
+-rw-r--r-- 1 runner runner  4452 Aug 25 14:27 README.md
+-rw-r--r-- 1 runner runner  2699 Aug 25 14:27 SETUP.md
+drwxr-xr-x 4 runner runner  4096 Aug 25 14:27 archive
+-rw-r--r-- 1 runner runner 19676 Aug 25 14:27 archive.py
+-rw-r--r-- 1 runner runner   174 Aug 25 14:27 requirements.txt
+-rw-r--r-- 1 runner runner  4868 Aug 25 14:27 test_offline.py
+=== smoke ===
+[2026-08-25T14:27:45+00:00] smoke test — season 2026, week 1 (python 3.12.14)
+[2026-08-25T14:27:45+00:00] archive dir would be: /home/runner/work/cfb-model/cfb-model/archive
+[2026-08-25T14:27:45+00:00] CFBD_API_KEY: set, 64 chars
+[2026-08-25T14:27:46+00:00]   OK   CFBD /teams/fbs  (138 items/bytes)
+[2026-08-25T14:27:46+00:00]   OK   CFBD /ratings/sp  (139 items/bytes)
+[2026-08-25T14:27:46+00:00]   OK   CFBD /ratings/fpi  (138 items/bytes)
+[2026-08-25T14:27:46+00:00]   OK   CFBD /ratings/elo  (0 items/bytes)
+[2026-08-25T14:27:46+00:00]   OK   CFBD /ratings/srs  (0 items/bytes)
+[2026-08-25T14:27:46+00:00]   OK   CFBD /ratings/core  (0 items/bytes)
+[2026-08-25T14:27:47+00:00]   OK   CFBD /lines  (99 items/bytes)
+[2026-08-25T14:27:47+00:00]   OK   CFBD /games  (389 items/bytes)
+[2026-08-25T14:27:47+00:00]   OK   Sonny Moore page  (20834 items/bytes)
+[2026-08-25T14:27:47+00:00]   OK   Pi-Rate page  (446751 items/bytes)
+[2026-08-25T14:27:47+00:00] smoke: 10/10 passed
+=== capture ===
+[2026-08-25T14:27:47+00:00] archiving season 2026 week 1 -> /home/runner/work/cfb-model/cfb-model/archive
+[2026-08-25T14:27:48+00:00]   sp_plus: +139 rows
+[2026-08-25T14:27:48+00:00]   fpi: +138 rows
+[2026-08-25T14:27:48+00:00]   lines: +150 rows
+[2026-08-25T14:27:48+00:00]   elo: +0 rows
+[2026-08-25T14:27:48+00:00]   srs: +0 rows
+[2026-08-25T14:27:48+00:00]   core: +0 rows
+[2026-08-25T14:27:48+00:00]   games: +389 rows
+[2026-08-25T14:27:49+00:00]   sonny_moore: +136 rows
+[2026-08-25T14:27:49+00:00]   pirate: +0 rows
+[2026-08-25T14:27:49+00:00] done: 952 rows, 0 failure(s)
+archive.py exit code: 0
