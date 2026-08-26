@@ -96,13 +96,23 @@ jobs:
             git push
           fi
 
+      # rc=1 means different things in the two modes, so the message has to
+      # branch. Run #3 reported "some slices failed" on a SMOKE run, which was
+      # nonsense — a smoke run has no slices.
       - name: Report
         if: always()
         run: |
           rc="${{ steps.run.outputs.rc }}"
-          case "$rc" in
-            0) echo "::notice::Ingest clean." ;;
-            1) echo "::warning::Some slices failed. See data/logs/ — re-run with resume=true to fill gaps." ;;
-            *) echo "::error::Ingest did not complete. See data/logs/." ; exit 1 ;;
-          esac
-
+          if [ "${{ inputs.smoke }}" = "true" ]; then
+            case "$rc" in
+              0) echo "::notice::Smoke clean — field mapping verified. Safe to ingest." ;;
+              1) echo "::warning::Smoke found a mapping or coverage problem. Read data/logs/ before ingesting." ;;
+              *) echo "::error::Smoke could not reach the API. See data/logs/." ; exit 1 ;;
+            esac
+          else
+            case "$rc" in
+              0) echo "::notice::Ingest clean." ;;
+              1) echo "::warning::Some slices failed. See data/logs/ — re-run with resume=true to fill gaps." ;;
+              *) echo "::error::Ingest did not complete. See data/logs/." ; exit 1 ;;
+            esac
+          fi
