@@ -1,0 +1,10 @@
+# Modeling dependencies (features.py, ratings.py, backtest.py, run_model.py).
+#
+# Kept in a SEPARATE file from the archiver on purpose: archive.py and ingest.py
+# are stdlib-only so the unattended GitHub Actions jobs have nothing to install
+# and nothing to break during a five-month season. Only the modeling code, which
+# runs on demand, needs these.
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
