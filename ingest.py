@@ -121,6 +121,29 @@ def fetch(path: str, **params: Any) -> Any:
             raise
     raise RuntimeError(f"unreachable: {last}")
 
+def fetch_season(path: str, season: int) -> list:
+    """
+    Fetch a whole season from an endpoint that takes seasonType.
+
+    Tries seasonType="both" first and falls back to regular + postseason
+    separately if the API rejects it. "both" is the one parameter value nothing
+    has ever verified against this API — the production archiver passes only
+    "regular", and so did the smoke test — and it must not be the thing that
+    fails partway through a multi-season ingest.
+
+    Raising on a fallback failure is deliberate: the caller's except block skips
+    writing the file entirely, so a half-fetched season can never masquerade as
+    complete on a later --resume.
+    """
+    try:
+        return fetch(path, year=season, seasonType="both")
+    except Exception as exc:  # noqa: BLE001
+        log(f"    seasonType=both rejected ({exc}); using regular+postseason")
+        rows: list = []
+        for stype in ("regular", "postseason"):
+            rows.extend(fetch(path, year=season, seasonType=stype))
+            time.sleep(SLEEP_BETWEEN)
+        return rows
 
 # ---------------------------------------------------------------- key resolution
 
@@ -431,7 +454,7 @@ def ingest(
             log(f"  {out_games.name} exists; skipping")
         else:
             try:
-                rows = fetch("/games", year=season, seasonType="both")
+                rows = fetch_season("/games", season)
                 calls += 1
                 n = write_gz(out_games, GAME_COLUMNS, (map_game(r) for r in rows))
                 log(f"  wrote {out_games.name}: {n} rows")
@@ -445,7 +468,7 @@ def ingest(
             log(f"  {out_lines.name} exists; skipping")
         else:
             try:
-                rows = fetch("/lines", year=season, seasonType="both")
+                rows = fetch_season("/lines", season)
                 calls += 1
                 flat = [x for r in rows for x in map_lines(r)]
                 n = write_gz(out_lines, LINE_COLUMNS, flat)
