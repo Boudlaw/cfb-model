@@ -242,43 +242,149 @@ def write_gz(path: Path, columns: Sequence[str], rows: Iterable[dict]) -> int:
 
 
 def smoke(season: int, week: int) -> int:
-    """Print what the API actually returns. Writes nothing."""
+    """
+    Diagnose the API's actual shape. Writes nothing. Exit 0 = safe to ingest.
+
+    This deliberately reports DISTRIBUTIONS, not a single sample row. The first
+    version of this function inspected only rows[0], which happened to be a
+    kickoff, saw `ppa: null`, and reported a broken mapping when nothing was
+    wrong — CFBD simply does not compute PPA for kicks. A single row cannot
+    distinguish "field is missing" from "field is legitimately absent on this
+    kind of play", so it must not be the basis for the verdict.
+
+    Three questions it answers, each of which would otherwise only surface after
+    the full ingest had been committed:
+
+      1. Is `ppa` populated on SCRIMMAGE plays (the only ones the model uses)?
+      2. Which `playType` strings actually exist, so features.py's whitelist can
+         be checked against reality rather than against my guess?
+      3. Which line providers carry `spreadOpen`? The ATS diagnostic depends on
+         the OPENING line, and at least one provider (teamrankings) returns null
+         for it.
+    """
     log(f"=== smoke: season {season} week {week} ===")
     rc = 0
+
+    # Kicks and administrative rows. Used ONLY to split the ppa-coverage report
+    # into "plays the model would use" vs. "plays it would drop anyway".
+    non_scrimmage_hint = (
+        "kickoff", "punt", "field goal", "extra point", "timeout", "end of",
+        "end period", "penalty", "kick", "two point", "uncategorized",
+    )
+
+    def is_scrimmage_like(pt: str) -> bool:
+        p = (pt or "").strip().lower()
+        return not any(h in p for h in non_scrimmage_hint)
+
     try:
         plays = fetch("/plays", year=season, week=week, seasonType="regular",
                       classification="fbs")
         log(f"/plays -> {len(plays)} rows")
-        if plays:
-            log(f"  observed keys: {sorted(plays[0].keys())}")
-            log(f"  sample raw   : {json.dumps(plays[0])[:600]}")
-            log(f"  mapped       : {json.dumps(map_play(plays[0], season, week))}")
-            m = map_play(plays[0], season, week)
-            nulls = [k for k, v in m.items() if v is None]
-            if nulls:
-                log(f"  !! MAPPED TO NONE: {nulls} -- fix CANDIDATES in map_play")
-                rc = 1
-            else:
-                log("  all mapped fields populated")
+        if not plays:
+            log("  !! no plays returned; cannot verify the mapping")
+            return 2
+        log(f"  observed keys: {sorted(plays[0].keys())}")
+
+        mapped = [map_play(r, season, week) for r in plays]
+
+        # --- per-playType counts and ppa coverage -------------------------------
+        by_type: dict[str, dict[str, int]] = {}
+        for m in mapped:
+            pt = str(m["play_type"])
+            slot = by_type.setdefault(pt, {"n": 0, "ppa_null": 0, "down_null": 0})
+            slot["n"] += 1
+            if m["ppa"] is None:
+                slot["ppa_null"] += 1
+            if m["down"] in (None, 0):
+                slot["down_null"] += 1
+
+        log("  playType distribution (n, ppa null, down null, scrimmage?):")
+        for pt, s in sorted(by_type.items(), key=lambda kv: -kv[1]["n"]):
+            log(f"    {pt:38} {s['n']:>6} {s['ppa_null']:>6} {s['down_null']:>6}"
+                f"   {'yes' if is_scrimmage_like(pt) else 'no'}")
+
+        scrim = [m for m in mapped if is_scrimmage_like(str(m["play_type"]))]
+        scrim_ppa = sum(1 for m in scrim if m["ppa"] is not None)
+        pct = 100.0 * scrim_ppa / len(scrim) if scrim else 0.0
+        log(f"  scrimmage plays: {len(scrim)}, with ppa: {scrim_ppa} ({pct:.1f}%)")
+
+        # The model needs EPA on the plays it keeps. Anything under ~90% coverage
+        # means either the free tier withholds it or the field name is wrong, and
+        # either way features.py would drop most of the data.
+        if pct < 90.0:
+            log(f"  !! VERDICT: ppa coverage on scrimmage plays is only {pct:.1f}%."
+                " Do NOT ingest. Check the field name or the API tier.")
+            rc = 1
+        else:
+            log(f"  OK: ppa is populated on {pct:.1f}% of scrimmage plays."
+                " Nulls are concentrated in kicks, which the model drops anyway.")
+
+        other_nulls = [
+            k for k in ("game_id", "offense", "defense", "home", "away",
+                        "yards_gained", "play_type", "period")
+            if sum(1 for m in mapped if m[k] is None) > len(mapped) * 0.05
+        ]
+        if other_nulls:
+            log(f"  !! MAPPED MOSTLY NONE: {other_nulls} -- fix map_play")
+            rc = 1
     except Exception as exc:  # noqa: BLE001
         log(f"/plays FAILED: {exc}")
-        rc = 2
-    for path, kw, mapper in (
-        ("/games", {"year": season, "week": week, "seasonType": "regular"}, map_game),
-        ("/lines", {"year": season, "week": week, "seasonType": "regular"}, None),
-    ):
-        try:
-            rows = fetch(path, **kw)
-            log(f"{path} -> {len(rows)} rows")
-            if rows:
-                log(f"  observed keys: {sorted(rows[0].keys())}")
-                if mapper:
-                    log(f"  mapped       : {json.dumps(mapper(rows[0]))}")
-                else:
-                    log(f"  mapped[0]    : {json.dumps(map_lines(rows[0])[:1])}")
-        except Exception as exc:  # noqa: BLE001
-            log(f"{path} FAILED: {exc}")
-            rc = max(rc, 2)
+        return 2
+
+    # --- games ----------------------------------------------------------------
+    try:
+        rows = fetch("/games", year=season, week=week, seasonType="regular")
+        log(f"/games -> {len(rows)} rows")
+        if rows:
+            log(f"  observed keys: {sorted(rows[0].keys())}")
+            gm = [map_game(r) for r in rows]
+            fbs = [g for g in gm
+                   if g["home_classification"] == "fbs" and g["away_classification"] == "fbs"]
+            scored = [g for g in fbs
+                      if g["home_points"] is not None and g["away_points"] is not None]
+            log(f"  FBS-vs-FBS: {len(fbs)}, with final scores: {len(scored)}")
+            if fbs and not scored:
+                log("  !! no scored FBS-vs-FBS games; margins cannot be formed")
+                rc = 1
+    except Exception as exc:  # noqa: BLE001
+        log(f"/games FAILED: {exc}")
+        rc = max(rc, 2)
+
+    # --- lines ----------------------------------------------------------------
+    try:
+        rows = fetch("/lines", year=season, week=week, seasonType="regular")
+        log(f"/lines -> {len(rows)} rows")
+        if rows:
+            log(f"  observed keys: {sorted(rows[0].keys())}")
+            flat = [x for r in rows for x in map_lines(r)]
+            prov: dict[str, dict[str, int]] = {}
+            for ln in flat:
+                s = prov.setdefault(str(ln["provider"]), {"n": 0, "spread": 0, "open": 0})
+                s["n"] += 1
+                if ln["spread"] is not None:
+                    s["spread"] += 1
+                if ln["spread_open"] is not None:
+                    s["open"] += 1
+            log(f"  {len(flat)} provider-rows across {len(rows)} games")
+            log("  provider (rows, with spread, with spreadOpen):")
+            for p, s in sorted(prov.items(), key=lambda kv: -kv[1]["n"]):
+                log(f"    {p:24} {s['n']:>5} {s['spread']:>5} {s['open']:>5}")
+            games_with_open = len({ln["game_id"] for ln in flat
+                                   if ln["spread_open"] is not None})
+            log(f"  games with an OPENING line from at least one provider: "
+                f"{games_with_open}/{len(rows)}")
+            if games_with_open == 0:
+                log("  !! VERDICT: no opening lines at all. The ATS diagnostic will"
+                    " be empty; prefer the closing spread or drop ATS for history.")
+                rc = 1
+            elif games_with_open < 0.5 * len(rows):
+                log("  !  WARNING: opening lines are sparse. ATS numbers will cover"
+                    " only a subset; report the subset size, never the full slate.")
+    except Exception as exc:  # noqa: BLE001
+        log(f"/lines FAILED: {exc}")
+        rc = max(rc, 2)
+
+    log(f"=== smoke verdict: {'SAFE TO INGEST' if rc == 0 else 'DO NOT INGEST YET'} ===")
     return rc
 
 
