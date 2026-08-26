@@ -1,0 +1,60 @@
+=== environment ===
+run_id     : 32975669175
+commit     : 0c27491e9f40e033cd84b7146f2113ef05b9f1f2
+python     : Python 3.12.14
+key present: true
+smoke      : true
+data dir: /home/runner/work/cfb-model/cfb-model/data
+=== smoke: season 2022 week 1 ===
+/plays -> 16648 rows
+  observed keys: ['away', 'clock', 'defense', 'defenseConference', 'defenseScore', 'defenseTimeouts', 'distance', 'down', 'driveId', 'driveNumber', 'gameId', 'home', 'id', 'offense', 'offenseConference', 'offenseScore', 'offenseTimeouts', 'period', 'playNumber', 'playText', 'playType', 'ppa', 'scoring', 'wallclock', 'yardline', 'yardsGained', 'yardsToGoal']
+  playType distribution (n, ppa null, down null, scrimmage?):
+    Rush                                     5890     20      0   yes
+    Pass Reception                           3297     13      0   yes
+    Pass Incompletion                        2096      3      0   yes
+    Punt                                      920    920      2   no
+    Penalty                                   919    919      7   no
+    Kickoff                                   693    693    297   no
+    Timeout                                   571    571      3   no
+    Kickoff Return (Offense)                  325    325    107   no
+    Sack                                      320      1      0   yes
+    Passing Touchdown                         313      1      0   yes
+    Rushing Touchdown                         309      4      0   yes
+    End Period                                191    181    181   no
+    Field Goal Good                           181    181      0   no
+    Interception                              101      0      0   yes
+    End of Game                                87     87     87   no
+    End of Half                                86     86     86   no
+    Fumble Recovery (Opponent)                 75      3      0   yes
+    Field Goal Missed                          60     60      0   no
+    Fumble Recovery (Own)                      57      0      0   yes
+    Pass Interception Return                   47      0      0   yes
+    Uncategorized                              43     43     41   no
+    Interception Return Touchdown              16      0      0   yes
+    Blocked Punt                               13     13      0   no
+    Blocked Field Goal                          9      9      0   no
+    Fumble Return Touchdown                     7      0      0   yes
+    Safety                                      6      0      0   yes
+    Blocked Punt Touchdown                      5      0      0   no
+    End of Regulation                           4      4      4   no
+    Kickoff Return Touchdown                    3      2      1   no
+    Two Point Rush                              2      2      2   no
+    Punt Return Touchdown                       1      0      0   no
+    Two Point Pass                              1      1      1   no
+  scrimmage plays: 12534, with ppa: 12489 (99.6%)
+  OK: ppa is populated on 99.6% of scrimmage plays. Nulls are concentrated in kicks, which the model drops anyway.
+/games -> 332 rows
+  observed keys: ['attendance', 'awayClassification', 'awayConference', 'awayId', 'awayLineScores', 'awayPoints', 'awayPostgameElo', 'awayPostgameWinProbability', 'awayPregameElo', 'awayTeam', 'completed', 'conferenceGame', 'excitementIndex', 'highlights', 'homeClassification', 'homeConference', 'homeId', 'homeLineScores', 'homePoints', 'homePostgameElo', 'homePostgameWinProbability', 'homePregameElo', 'homeTeam', 'id', 'neutralSite', 'notes', 'playoff', 'season', 'seasonType', 'startDate', 'startTimeTBD', 'venue', 'venueId', 'week']
+  FBS-vs-FBS: 53, with final scores: 53
+/lines -> 129 rows
+  observed keys: ['awayClassification', 'awayConference', 'awayScore', 'awayTeam', 'awayTeamId', 'homeClassification', 'homeConference', 'homeScore', 'homeTeam', 'homeTeamId', 'id', 'lines', 'season', 'seasonType', 'startDate', 'week']
+  396 provider-rows across 129 games
+  provider (rows, with spread, with spreadOpen):
+    William Hill (New Jersey)   122   122     0
+    consensus                  118   118     0
+    Bovada                     104   104   104
+    teamrankings                50    50     0
+    Caesars Sportsbook (Colorado)     2     2     0
+  games with an OPENING line from at least one provider: 104/129
+=== smoke verdict: SAFE TO INGEST ===
+ingest.py exit code: 0
