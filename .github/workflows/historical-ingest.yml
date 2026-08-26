@@ -1,1 +1,108 @@
+name: Historical CFB ingest (one-time)
+
+# Manual only. This is a one-time backfill of 2022-2025 plays, games and betting
+# lines, not a recurring job — the weekly archiver handles the ongoing capture.
+#
+# Run --smoke FIRST (set smoke=true) and read the log. ingest.py's field mapping
+# was written without the ability to call the API, so the smoke output is the
+# first confirmation that the response keys are what the mapping expects.
+on:
+  workflow_dispatch:
+    inputs:
+      smoke:
+        description: "Smoke test only — print real API keys, write nothing"
+        type: boolean
+        default: true
+      seasons:
+        description: "Comma-separated seasons"
+        default: "2022,2023,2024,2025"
+      weeks:
+        description: "Week range"
+        default: "1-16"
+      resume:
+        description: "Skip seasons already present in data/"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: historical-ingest
+  cancel-in-progress: false
+
+env:
+  CFB_DATA_DIR: ${{ github.workspace }}/data
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      # v5: the v4/v5 Node 20 deprecation warning noted in the ops doc.
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Prepare log
+        run: |
+          mkdir -p data/logs
+          echo "LOGFILE=data/logs/ingest-$(date -u +%Y%m%dT%H%M%SZ).log" >> "$GITHUB_ENV"
+
+      - name: Environment
+        continue-on-error: true
+        run: |
+          {
+            echo "=== environment ==="
+            echo "run_id     : ${{ github.run_id }}"
+            echo "commit     : ${{ github.sha }}"
+            echo "python     : $(python --version 2>&1)"
+            echo "key present: ${{ secrets.CFBD_API_KEY != '' }}"
+            echo "smoke      : ${{ inputs.smoke }}"
+          } 2>&1 | tee -a "$LOGFILE"
+
+      - name: Ingest
+        id: run
+        continue-on-error: true
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: |
+          set +e
+          python ingest.py \
+            --seasons "${{ inputs.seasons }}" \
+            --weeks "${{ inputs.weeks }}" \
+            ${{ inputs.smoke == true && '--smoke' || '' }} \
+            ${{ inputs.resume == false && '--no-resume' || '' }} \
+            2>&1 | tee -a "$LOGFILE"
+          rc=${PIPESTATUS[0]}
+          echo "ingest.py exit code: $rc" | tee -a "$LOGFILE"
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+
+      # Committed even on failure, so the log is diagnosable by cloning the repo
+      # rather than by reading the Actions UI.
+      - name: Commit data and log
+        if: always()
+        run: |
+          git config user.name  "cfb-ingest"
+          git config user.email "actions@github.com"
+          git add -A data/
+          if git diff --cached --quiet; then
+            echo "nothing new to commit"
+          else
+            git commit -m "ingest: run ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase --autostash || true
+            git push
+          fi
+
+      - name: Report
+        if: always()
+        run: |
+          rc="${{ steps.run.outputs.rc }}"
+          case "$rc" in
+            0) echo "::notice::Ingest clean." ;;
+            1) echo "::warning::Some slices failed. See data/logs/ — re-run with resume=true to fill gaps." ;;
+            *) echo "::error::Ingest did not complete. See data/logs/." ; exit 1 ;;
+          esac
 
