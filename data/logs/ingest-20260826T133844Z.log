@@ -1,0 +1,20 @@
+=== environment ===
+run_id     : 32974354618
+commit     : 20f4a46aeeadfeb1925b0c01084dffdc2e76995f
+python     : Python 3.12.14
+key present: true
+smoke      : true
+data dir: /home/runner/work/cfb-model/cfb-model/data
+=== smoke: season 2022 week 1 ===
+/plays -> 16648 rows
+  observed keys: ['away', 'clock', 'defense', 'defenseConference', 'defenseScore', 'defenseTimeouts', 'distance', 'down', 'driveId', 'driveNumber', 'gameId', 'home', 'id', 'offense', 'offenseConference', 'offenseScore', 'offenseTimeouts', 'period', 'playNumber', 'playText', 'playType', 'ppa', 'scoring', 'wallclock', 'yardline', 'yardsGained', 'yardsToGoal']
+  sample raw   : {"gameId": 401426532, "driveId": "4014265321", "id": "401426532101849908", "driveNumber": 1, "playNumber": 1, "offense": "Austin Peay", "offenseConference": "Atlantic Sun", "offenseScore": 0, "defense": "Western Kentucky", "defenseConference": "Conference USA", "defenseScore": 0, "home": "Western Kentucky", "away": "Austin Peay", "period": 1, "clock": {"minutes": 15, "seconds": 0}, "offenseTimeouts": 3, "defenseTimeouts": 3, "yardline": 65, "yardsToGoal": 65, "down": 0, "distance": 0, "yardsGained": 0, "scoring": false, "playType": "Kickoff", "playText": "Riley Stephens kickoff for 65 yds for 
+  mapped       : {"season": 2022, "week": 1, "game_id": 401426532, "play_id": "401426532101849908", "offense": "Austin Peay", "defense": "Western Kentucky", "home": "Western Kentucky", "away": "Austin Peay", "offense_conference": "Atlantic Sun", "defense_conference": "Conference USA", "down": 0, "distance": 0, "yards_gained": 0, "play_type": "Kickoff", "period": 1, "offense_score": 0, "defense_score": 0, "ppa": null}
+  !! MAPPED TO NONE: ['ppa'] -- fix CANDIDATES in map_play
+/games -> 332 rows
+  observed keys: ['attendance', 'awayClassification', 'awayConference', 'awayId', 'awayLineScores', 'awayPoints', 'awayPostgameElo', 'awayPostgameWinProbability', 'awayPregameElo', 'awayTeam', 'completed', 'conferenceGame', 'excitementIndex', 'highlights', 'homeClassification', 'homeConference', 'homeId', 'homeLineScores', 'homePoints', 'homePostgameElo', 'homePostgameWinProbability', 'homePregameElo', 'homeTeam', 'id', 'neutralSite', 'notes', 'playoff', 'season', 'seasonType', 'startDate', 'startTimeTBD', 'venue', 'venueId', 'week']
+  mapped       : {"season": 2022, "week": 1, "game_id": 401426532, "start_date": "2022-08-27T16:00:00.000Z", "neutral_site": false, "conference_game": false, "home_team": "Western Kentucky", "away_team": "Austin Peay", "home_classification": "fbs", "away_classification": "fcs", "home_points": 38, "away_points": 27, "home_pregame_elo": 1684, "away_pregame_elo": null}
+/lines -> 129 rows
+  observed keys: ['awayClassification', 'awayConference', 'awayScore', 'awayTeam', 'awayTeamId', 'homeClassification', 'homeConference', 'homeScore', 'homeTeam', 'homeTeamId', 'id', 'lines', 'season', 'seasonType', 'startDate', 'week']
+  mapped[0]    : [{"season": 2022, "week": 1, "game_id": 401411101, "home_team": "Georgia Tech", "away_team": "Clemson", "provider": "teamrankings", "spread": 24.5, "spread_open": null, "over_under": 51, "over_under_open": null}]
+ingest.py exit code: 1
