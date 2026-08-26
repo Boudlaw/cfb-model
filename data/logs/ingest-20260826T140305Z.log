@@ -1,0 +1,93 @@
+=== environment ===
+run_id     : 32977881302
+commit     : f25149c61dbc2e43c8bec36ed6b4c7b311fafed6
+python     : Python 3.12.14
+key present: true
+smoke      : false
+data dir: /home/runner/work/cfb-model/cfb-model/data
+=== season 2022 ===
+  regular wk 1: 16648 plays
+  regular wk 2: 14693 plays
+  regular wk 3: 13524 plays
+  regular wk 4: 11726 plays
+  regular wk 5: 10989 plays
+  regular wk 6: 10387 plays
+  regular wk 7:  9502 plays
+  regular wk 8:  9514 plays
+  regular wk 9:  8703 plays
+  regular wk10: 10693 plays
+  regular wk11: 11584 plays
+  regular wk12: 11228 plays
+  regular wk13: 11245 plays
+  regular wk14:  2150 plays
+  regular wk15:   175 plays
+  regular wk16:     0 plays
+  postseason wk 1:  7521 plays
+  wrote plays_2022.csv.gz: 160282 rows
+  wrote games_2022.csv.gz: 3705 rows
+  wrote lines_2022.csv.gz: 4310 rows
+=== season 2023 ===
+  regular wk 1: 16195 plays
+  regular wk 2: 14612 plays
+  regular wk 3: 13014 plays
+  regular wk 4: 11753 plays
+  regular wk 5: 10373 plays
+  regular wk 6:  9127 plays
+  regular wk 7:  9899 plays
+  regular wk 8:  9678 plays
+  regular wk 9:  9494 plays
+  regular wk10: 11390 plays
+  regular wk11: 11301 plays
+  regular wk12: 11756 plays
+  regular wk13: 11187 plays
+  regular wk14:  1778 plays
+  regular wk15:   166 plays
+  regular wk16:     0 plays
+  postseason wk 1:  7272 plays
+  wrote plays_2023.csv.gz: 158995 rows
+  wrote games_2023.csv.gz: 3734 rows
+  wrote lines_2023.csv.gz: 3072 rows
+=== season 2024 ===
+  regular wk 1: 17239 plays
+  regular wk 2: 13706 plays
+  regular wk 3: 10987 plays
+  regular wk 4: 11414 plays
+  regular wk 5:  9760 plays
+  regular wk 6:  8654 plays
+  regular wk 7:  9415 plays
+  regular wk 8: 10519 plays
+  regular wk 9: 10138 plays
+  regular wk10:  8882 plays
+  regular wk11:  8847 plays
+  regular wk12:  9842 plays
+  regular wk13: 11527 plays
+  regular wk14: 11961 plays
+  regular wk15:  1546 plays
+  regular wk16:   146 plays
+  postseason wk 1:  8168 plays
+  wrote plays_2024.csv.gz: 162751 rows
+  wrote games_2024.csv.gz: 3801 rows
+  wrote lines_2024.csv.gz: 3172 rows
+=== season 2025 ===
+  regular wk 1: 16693 plays
+  regular wk 2: 15147 plays
+  regular wk 3: 12320 plays
+  regular wk 4: 10919 plays
+  regular wk 5:  9438 plays
+  regular wk 6:  8892 plays
+  regular wk 7:  9950 plays
+  regular wk 8: 10838 plays
+  regular wk 9:  9627 plays
+  regular wk10:  9217 plays
+  regular wk11:  9357 plays
+  regular wk12: 10393 plays
+  regular wk13: 11479 plays
+  regular wk14: 11908 plays
+  regular wk15:  1602 plays
+  regular wk16:   140 plays
+  postseason wk 1:  8316 plays
+  wrote plays_2025.csv.gz: 166236 rows
+  wrote games_2025.csv.gz: 3831 rows
+  wrote lines_2025.csv.gz: 3345 rows
+=== done: 76 API calls, 0 failure(s) ===
+ingest.py exit code: 0
