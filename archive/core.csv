@@ -1,0 +1,139 @@
+captured_at,capture_season,capture_week,source,year,throughSeasonType,throughWeek,team,conference,overall,offense,defense,offensePlays,defensePlays,modelVersion
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Notre Dame,FBS Independents,17.11,7.82,-9.29,89,77,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Ohio State,Big Ten,16.81,7.27,-9.54,106,111,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Alabama,SEC,15.68,4.46,-11.22,116,85,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,LSU,SEC,15.35,2,-13.34,131,65,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Georgia,SEC,14.56,8.32,-6.24,25,27,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,USC,Big Ten,14.23,10.44,-3.79,169,102,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Miami,ACC,12.57,7.39,-5.17,44,34,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Texas A&M,SEC,11.6,3.77,-7.83,120,83,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Oregon,Big Ten,10.66,4.47,-6.19,123,150,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,South Carolina,SEC,10.46,5.21,-5.25,35,32,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Penn State,Big Ten,10.3,6.33,-3.97,101,79,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Missouri,SEC,10.13,3.99,-6.14,70,65,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Utah,Big 12,9.66,6.29,-3.36,36,41,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Mississippi State,SEC,9.59,6.69,-2.9,103,89,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Texas,SEC,9.14,5.15,-3.99,128,101,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Tennessee,SEC,9.1,6.85,-2.26,66,71,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Florida,SEC,8.82,5.72,-3.1,40,58,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Indiana,Big Ten,8.35,6.55,-1.8,44,58,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Oklahoma,SEC,7.97,1.26,-6.71,95,91,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Auburn,SEC,7.74,1.52,-6.22,141,139,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Texas Tech,Big 12,7.35,1.7,-5.66,74,71,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Nebraska,Big Ten,7.31,5.64,-1.68,113,84,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Iowa,Big Ten,7.24,0.95,-6.29,109,74,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Michigan,Big Ten,6.71,1.25,-5.46,105,129,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,UCLA,Big Ten,6.48,3.22,-3.26,119,140,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Washington,Big Ten,6.29,0.58,-5.71,136,113,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Kansas State,Big 12,6.07,2.55,-3.52,62,37,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Ole Miss,SEC,6.02,6.82,0.81,120,113,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Vanderbilt,SEC,5.43,3.02,-2.41,69,67,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Wake Forest,ACC,5.32,2.09,-3.23,114,118,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Pittsburgh,ACC,5.24,1.27,-3.97,123,90,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,BYU,Big 12,5.18,4.31,-0.88,56,62,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,SMU,ACC,5.16,3.54,-1.61,67,67,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,South Florida,American Athletic,5.07,3.74,-1.33,111,137,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Virginia,ACC,4.85,1.01,-3.84,62,37,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Louisville,ACC,4.52,3.31,-1.21,68,76,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Baylor,Big 12,3.46,1.86,-1.6,98,74,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Arizona State,Big 12,3.34,-0.15,-3.48,59,54,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Toledo,Mid-American,3.26,0.61,-2.65,41,83,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Illinois,Big Ten,3.22,5.5,2.28,111,123,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Iowa State,Big 12,3.14,0.49,-2.65,53,59,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Memphis,American Athletic,3.03,6.1,3.07,172,211,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Duke,ACC,3.03,1.89,-1.14,132,122,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,James Madison,Sun Belt,2.82,0.64,-2.18,50,66,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Florida State,ACC,2.82,4.06,1.25,132,131,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Maryland,Big Ten,2.1,0.16,-1.94,65,45,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,North Texas,American Athletic,1.76,5.27,3.51,105,102,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Georgia Tech,ACC,1.73,1.65,-0.08,124,140,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,North Carolina,ACC,1.63,-1.2,-2.84,57,70,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,TCU,Big 12,1.59,-0.81,-2.41,70,57,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Houston,Big 12,1.47,1.1,-0.37,72,73,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,East Carolina,American Athletic,1.17,0.21,-0.96,97,130,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Cincinnati,Big 12,1.16,1.72,0.56,61,68,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Tulane,American Athletic,0.95,0.68,-0.26,105,148,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Arizona,Big 12,0.9,1.83,0.93,62,56,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Purdue,Big Ten,0.6,2.04,1.43,69,58,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Northwestern,Big Ten,0.5,-0.02,-0.52,0,0,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Boise State,Pac-12,0.48,2.1,1.62,140,114,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,San Diego State,Pac-12,0.22,-4.03,-4.25,55,66,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Old Dominion,Sun Belt,0.2,-1.84,-2.03,29,62,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Air Force,Mountain West,0.01,4.48,4.47,66,60,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,North Dakota State,Mountain West,-0.12,-0.31,-0.18,114,108,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,UCF,Big 12,-0.14,-3.05,-2.91,52,71,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Texas State,Pac-12,-0.27,3.63,3.9,116,125,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Virginia Tech,ACC,-0.48,-0.06,0.42,62,29,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,San José State,Mountain West,-0.55,-1,-0.45,115,127,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Stanford,ACC,-0.7,-0.43,0.28,105,118,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Navy,American Athletic,-0.79,0.7,1.5,46,67,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Nevada,Mountain West,-0.92,-0.05,0.87,43,68,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Fresno State,Pac-12,-1.11,-0.86,0.25,63,67,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Tulsa,American Athletic,-1.21,-2.45,-1.24,128,148,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Wisconsin,Big Ten,-1.25,-2.02,-0.77,52,60,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,UTSA,American Athletic,-1.29,0.27,1.56,74,77,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,NC State,ACC,-1.56,-0.94,0.62,37,62,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Florida International,Conference USA,-1.83,-3.72,-1.89,153,125,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Michigan State,Big Ten,-1.91,0.12,2.04,144,90,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Coastal Carolina,Sun Belt,-1.98,-0.43,1.55,64,75,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Rutgers,Big Ten,-2.15,1.86,4.01,115,123,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Clemson,ACC,-2.19,-4.8,-2.62,102,128,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,New Mexico,Mountain West,-2.24,-2.73,-0.48,58,25,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Arkansas,SEC,-2.34,2.23,4.56,41,36,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Utah State,Pac-12,-2.48,-2.58,-0.1,57,74,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Army,American Athletic,-2.51,1.03,3.54,62,55,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Colorado State,Pac-12,-2.51,0.2,2.71,67,52,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Western Michigan,Mid-American,-2.74,-3.34,-0.61,67,48,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Kentucky,SEC,-2.76,-4.64,-1.88,60,57,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Kansas,Big 12,-2.84,-0.11,2.73,65,70,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Troy,Sun Belt,-2.88,-2.31,0.57,66,70,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Boston College,ACC,-2.94,-0.41,2.53,128,127,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Colorado,Big 12,-2.95,-2.54,0.41,74,53,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,West Virginia,Big 12,-3.33,-1.96,1.37,75,64,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Georgia State,Sun Belt,-3.35,0.15,3.5,68,55,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Oregon State,Pac-12,-3.58,-1.24,2.34,144,146,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Washington State,Pac-12,-3.66,-3.75,-0.09,93,124,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Liberty,Conference USA,-3.66,-1.14,2.52,66,50,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Middle Tennessee,Conference USA,-4.06,-2.07,1.98,69,61,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Syracuse,ACC,-4.15,-6.1,-1.95,83,60,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,UConn,FBS Independents,-4.15,-0.47,3.68,45,65,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Wyoming,Mountain West,-4.18,-3.06,1.12,52,67,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Louisiana Tech,Sun Belt,-4.22,-6.97,-2.76,36,69,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Temple,American Athletic,-4.24,-2.2,2.04,44,63,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Oklahoma State,Big 12,-4.24,-3.74,0.5,169,116,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Minnesota,Big Ten,-4.25,-1.18,3.07,58,53,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,South Alabama,Sun Belt,-4.48,1.9,6.38,72,51,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,UAB,American Athletic,-4.54,-0.91,3.63,134,105,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,California,ACC,-4.6,-2.85,1.74,145,136,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Louisiana,Sun Belt,-4.69,-0.61,4.08,41,72,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Sam Houston,Conference USA,-4.94,-3.6,1.34,134,138,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,UNLV,Mountain West,-4.95,-2.32,2.62,198,181,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Southern Miss,Sun Belt,-4.97,-3.24,1.73,41,67,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Miami (OH),Mid-American,-5,-1.51,3.49,38,52,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Central Michigan,Mid-American,-5.18,-3.84,1.34,25,58,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,App State,Sun Belt,-5.19,-1.43,3.76,71,72,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Buffalo,Mid-American,-5.38,-4.55,0.84,69,78,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Georgia Southern,Sun Belt,-5.56,-4.18,1.38,66,73,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Florida Atlantic,American Athletic,-5.92,-0.35,5.57,125,86,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Massachusetts,Mid-American,-6.3,-2.94,3.36,63,49,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Kennesaw State,Conference USA,-6.52,-1.43,5.09,55,68,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Marshall,Sun Belt,-7.12,-2.53,4.59,96,107,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,UTEP,Mountain West,-7.36,-4.85,2.51,34,33,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Delaware,Conference USA,-7.65,-5.23,2.41,67,69,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Arkansas State,Sun Belt,-7.65,-1.46,6.19,58,62,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Ohio,Mid-American,-7.71,-0.7,7.01,121,135,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Jacksonville State,Conference USA,-8.08,-4.3,3.78,103,113,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Hawai'i,Mountain West,-8.18,-5.38,2.8,223,200,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,New Mexico State,Conference USA,-8.3,-3.91,4.39,131,139,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Eastern Michigan,Mid-American,-8.67,-5.71,2.96,184,200,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Sacramento State,Mid-American,-9.07,-6.42,2.65,93,109,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Charlotte,American Athletic,-9.43,-5.07,4.37,45,44,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Bowling Green,Mid-American,-9.9,-5.07,4.83,22,39,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Missouri State,Conference USA,-9.91,-5.18,4.72,24,66,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Northern Illinois,Mountain West,-10.29,-6.33,3.96,21,50,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Akron,Mid-American,-10.42,-5.81,4.61,49,56,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Rice,American Athletic,-11,-7.07,3.93,25,29,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Kent State,Mid-American,-12,-4.85,7.15,32,35,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Western Kentucky,Conference USA,-12.16,-4.37,7.79,95,68,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,Ball State,Mid-American,-12.2,-6.43,5.78,34,44,core-preseason-v1
+2026-09-15T12:02:16+00:00,2026,4,core,2026,regular,2,UL Monroe,Sun Belt,-12.62,-5.83,6.79,93,117,core-preseason-v1
