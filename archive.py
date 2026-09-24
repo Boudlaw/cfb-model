@@ -275,6 +275,39 @@ def cap_games(season: int, week: int) -> list[dict]:
     return _tag(data if isinstance(data, list) else [], season, week, "games")
 
 
+def cap_ppa(season: int, week: int) -> list[dict]:
+    """
+    Predicted Points Added, team season aggregates.
+
+    `offense_overall` is PPA per play generated -- higher is better.
+    `defense_overall` is PPA per play allowed -- LOWER is better, and a negative
+    value means the defence destroyed expected points on net. _tag already
+    flattens the nested offense/defense objects into those columns, so no
+    special handling is needed downstream.
+
+    `excludeGarbageTime` is pinned to true and must stay pinned. The flag moves
+    every value, so flipping it silently makes one week's capture incomparable
+    with the next -- the same discipline the blue-chip ratio needs on its own
+    degrees of freedom.
+
+    Filed as critical, i.e. assume it CANNOT be backfilled. The endpoint does
+    accept a `week` parameter, but nobody has established whether that yields a
+    true point-in-time value or simply season-to-date filtered. Until someone
+    checks, the weekly capture is the only record. Downgrade to "recoverable"
+    once verified.
+    """
+    data, raw = cfbd_get("/ppa/teams", {"year": season, "excludeGarbageTime": "true"})
+    write_raw("ppa", season, week, raw, "json")
+    if not isinstance(data, list):
+        raise RuntimeError(f"ppa: expected a JSON list, got {type(data).__name__}")
+    rows = _tag(data, season, week, "ppa")
+    if len(rows) < 100:
+        raise RuntimeError(f"ppa: parsed only {len(rows)} teams, expected ~138. "
+                           f"A low count here is the silent-failure mode -- "
+                           f"inspect the raw capture before trusting it.")
+    return rows
+
+
 # ---------------------------------------------------------------- scraped sources
 
 SONNY_RE = re.compile(
@@ -339,6 +372,7 @@ SOURCES: list[tuple[str, Callable[[int, int], list[dict]], str]] = [
     ("sp_plus",     lambda s, w: cap_ratings("/ratings/sp", "sp_plus", s, w, False),  "critical"),
     ("fpi",         lambda s, w: cap_ratings("/ratings/fpi", "fpi", s, w, False),     "critical"),
     ("lines",       cap_lines,                                                        "critical"),
+       ("ppa",         cap_ppa,                                                          "critical"),
     ("elo",         lambda s, w: cap_ratings("/ratings/elo", "elo", s, w, True),      "recoverable"),
     ("srs",         lambda s, w: cap_ratings("/ratings/srs", "srs", s, w, False),     "recoverable"),
     ("core",        lambda s, w: cap_ratings("/ratings/core", "core", s, w, True),    "recoverable"),
