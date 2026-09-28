@@ -413,3 +413,141 @@ captured_at,capture_season,capture_week,source,year,throughSeasonType,throughWee
 2026-09-24T13:53:41+00:00,2026,4,core,2026,regular,3,Bowling Green,Mid-American,-18.53,-8.74,9.79,53,79,core-preseason-v1
 2026-09-24T13:53:41+00:00,2026,4,core,2026,regular,3,Kent State,Mid-American,-19.07,-9.89,9.17,60,76,core-preseason-v1
 2026-09-24T13:53:41+00:00,2026,4,core,2026,regular,3,Western Kentucky,Conference USA,-22.33,-11.27,11.05,145,117,core-preseason-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Notre Dame,FBS Independents,30.42,11.54,-18.88,187,158,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Alabama,SEC,25.35,12.01,-13.34,231,209,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Mississippi State,SEC,24.77,18.46,-6.32,239,243,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,LSU,SEC,22.4,4.76,-17.64,241,183,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Utah,Big 12,21.49,12.4,-9.08,150,146,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Ohio State,Big Ten,20.55,13.77,-6.78,213,203,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,BYU,Big 12,20,13.4,-6.6,96,103,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Georgia,SEC,19.55,6.29,-13.27,113,120,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Missouri,SEC,18.33,6.22,-12.11,192,213,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,UCLA,Big Ten,18.16,7.98,-10.18,238,243,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Miami,ACC,17.21,12.54,-4.66,149,120,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Nebraska,Big Ten,16.66,10.22,-6.45,179,143,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Florida,SEC,15.47,13.83,-1.64,186,180,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Wisconsin,Big Ten,14.67,4.73,-9.94,167,167,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Duke,ACC,12.82,1.44,-11.38,196,166,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Michigan,Big Ten,12.71,5.08,-7.62,230,219,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,James Madison,Sun Belt,12.58,3.61,-8.97,200,202,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Massachusetts,Mid-American,12.48,6.66,-5.81,106,100,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Penn State,Big Ten,12.47,1.32,-11.16,207,181,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Texas Tech,Big 12,11.96,9.68,-2.28,184,200,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,North Dakota State,Mountain West,10.49,3.21,-7.28,168,167,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Texas,SEC,9.93,-3.38,-13.31,258,218,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Fresno State,Pac-12,9.86,4.98,-4.87,198,197,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Pittsburgh,ACC,9.68,2.58,-7.1,183,160,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Louisiana,Sun Belt,9.16,-3.81,-12.98,189,171,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Indiana,Big Ten,8.99,6.53,-2.46,162,163,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Boise State,Pac-12,8.87,8.48,-0.39,192,151,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Oklahoma State,Big 12,8.83,0.29,-8.54,237,202,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Wake Forest,ACC,8.76,4.06,-4.7,236,258,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Oklahoma,SEC,8.56,-6.39,-14.95,205,186,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Arizona,Big 12,8.1,9.45,1.35,183,177,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Houston,Big 12,7.89,12.5,4.61,210,196,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Liberty,Conference USA,7.88,7.04,-0.84,186,153,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Oregon,Big Ten,7.68,0.59,-7.09,190,224,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,USC,Big Ten,7.66,16.08,8.42,306,238,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Baylor,Big 12,7.12,-0.3,-7.42,237,230,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,South Florida,American Athletic,7,-1.63,-8.64,163,198,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Northwestern,Big Ten,6.82,7.16,0.34,110,119,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Vanderbilt,SEC,5.97,-2.44,-8.41,198,203,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Cincinnati,Big 12,5.94,8.48,2.54,187,202,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Auburn,SEC,5.73,0.92,-4.81,264,288,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Toledo,Mid-American,5.7,4.5,-1.2,166,194,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Air Force,Mountain West,5.65,8.29,2.64,138,120,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Ole Miss,SEC,5.63,13.05,7.42,250,251,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Texas State,Pac-12,4.98,12.6,7.62,186,209,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Tennessee,SEC,4.61,-0.81,-5.43,198,163,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Memphis,American Athletic,4.36,9.96,5.6,172,211,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Iowa,Big Ten,4.17,-0.53,-4.7,167,141,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Louisville,ACC,3.85,6.45,2.6,201,214,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Miami (OH),Mid-American,3.73,9.31,5.59,153,186,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Iowa State,Big 12,3.72,0.06,-3.66,165,150,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Washington,Big Ten,3.57,-3.37,-6.94,189,174,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,SMU,ACC,3.32,2.54,-0.78,222,188,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,TCU,Big 12,3.1,-7.97,-11.07,203,162,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,South Carolina,SEC,2.65,6.44,3.79,175,140,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Oregon State,Pac-12,2.63,-1.22,-3.85,194,186,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Kentucky,SEC,2.62,-3.53,-6.15,175,193,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Kansas State,Big 12,2.5,4.23,1.73,205,145,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Virginia,ACC,2.43,2.55,0.12,184,137,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Tulsa,American Athletic,1.98,-3.35,-5.33,174,221,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,New Mexico,Mountain West,1.81,-1.28,-3.09,162,130,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Michigan State,Big Ten,1.6,-0.58,-2.18,248,223,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Virginia Tech,ACC,1.44,3.68,2.24,214,154,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,East Carolina,American Athletic,1.36,-3.89,-5.25,162,192,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Utah State,Pac-12,1.29,-5.22,-6.5,149,209,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Maryland,Big Ten,1.1,-0.52,-1.62,175,159,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,UAB,American Athletic,0.92,-3.8,-4.71,244,246,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Clemson,ACC,0.87,-7.06,-7.93,230,251,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,UConn,FBS Independents,0.58,-0.82,-1.4,160,178,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,UTSA,American Athletic,0.54,3.05,2.51,186,228,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Illinois,Big Ten,0.49,12.83,12.34,175,189,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Middle Tennessee,Conference USA,-0.12,-0.92,-0.8,192,184,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,UCF,Big 12,-0.17,-6.32,-6.15,162,220,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Jacksonville State,Conference USA,-1.47,1.49,2.96,219,242,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Georgia State,Sun Belt,-2.22,1.3,3.52,207,183,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,San José State,Mountain West,-2.59,-7.76,-5.16,182,194,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,North Texas,American Athletic,-2.62,7.68,10.3,189,172,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Syracuse,ACC,-3.37,-7.27,-3.91,153,120,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Florida Atlantic,American Athletic,-3.56,-1.29,2.27,259,206,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Temple,American Athletic,-3.8,4.61,8.41,166,198,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Wyoming,Mountain West,-3.88,2.95,6.82,169,199,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Purdue,Big Ten,-4.01,9.76,13.77,162,169,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Stanford,ACC,-4.16,3.24,7.4,220,251,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,UNLV,Mountain West,-4.53,-5.24,-0.71,253,236,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Minnesota,Big Ten,-4.61,-3.51,1.1,167,153,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Troy,Sun Belt,-4.81,-5.86,-1.05,218,176,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Texas A&M,SEC,-4.86,-4.41,0.45,248,179,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Florida International,Conference USA,-4.9,-10.09,-5.19,229,191,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Nevada,Mountain West,-5.23,-0.35,4.88,160,207,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Rutgers,Big Ten,-5.23,-0.26,4.97,184,186,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Kansas,Big 12,-5.28,-6.65,-1.37,137,136,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Boston College,ACC,-5.38,-8.52,-3.14,189,204,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Army,American Athletic,-5.96,6.36,12.32,125,107,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Coastal Carolina,Sun Belt,-5.99,-0.4,5.58,187,201,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Arkansas,SEC,-6.42,-3.83,2.59,154,132,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Sam Houston,Conference USA,-6.72,-4.83,1.89,188,190,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Western Michigan,Mid-American,-6.86,-6.45,0.41,167,161,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,North Carolina,ACC,-6.87,-3.32,3.55,125,134,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Tulane,American Athletic,-6.98,-4.15,2.84,239,276,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Louisiana Tech,Sun Belt,-7.36,-11.73,-4.37,112,136,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Delaware,Conference USA,-7.36,-3.75,3.62,162,182,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Ohio,Mid-American,-7.46,2.98,10.45,180,207,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Colorado State,Pac-12,-7.49,4.59,12.08,185,163,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,App State,Sun Belt,-7.52,-1.16,6.35,207,206,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Old Dominion,Sun Belt,-7.57,-15.69,-8.13,150,204,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Georgia Southern,Sun Belt,-7.63,-3.36,4.27,203,184,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Arkansas State,Sun Belt,-7.74,-1.18,6.57,170,192,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Rice,American Athletic,-7.87,-1.81,6.06,149,160,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Florida State,ACC,-8.02,3.28,11.31,195,197,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Georgia Tech,ACC,-8.35,-0.51,7.85,193,211,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Central Michigan,Mid-American,-8.55,-2.65,5.9,114,154,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Colorado,Big 12,-9.07,-11.73,-2.66,204,180,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,West Virginia,Big 12,-9.37,0.15,9.52,229,202,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,San Diego State,Pac-12,-9.72,-12.41,-2.69,173,192,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,NC State,ACC,-10.22,-1.31,8.9,191,178,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Navy,American Athletic,-10.4,-6.19,4.21,117,121,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,South Alabama,Sun Belt,-11.33,3.26,14.58,195,171,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Arizona State,Big 12,-11.51,-10.89,0.62,125,126,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Hawai'i,Mountain West,-11.55,-7.48,4.07,290,260,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Sacramento State,Mid-American,-11.59,-10.76,0.83,203,206,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Marshall,Sun Belt,-11.68,3.14,14.83,166,171,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,California,ACC,-12.39,-9.65,2.74,200,200,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Southern Miss,Sun Belt,-12.58,-7.25,5.34,158,200,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Eastern Michigan,Mid-American,-13.69,-9.67,4.01,226,250,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Northern Illinois,Mountain West,-14.01,-7.07,6.95,144,153,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Buffalo,Mid-American,-14.33,-7.72,6.6,106,119,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,New Mexico State,Conference USA,-14.38,-5.53,8.85,179,186,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Charlotte,American Athletic,-14.5,-16.39,-1.89,146,197,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Kennesaw State,Conference USA,-15.5,-5.13,10.37,154,185,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Washington State,Pac-12,-15.5,-15,0.5,163,198,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,UL Monroe,Sun Belt,-16.84,-6.44,10.41,137,185,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Kent State,Mid-American,-18.28,-12.03,6.25,127,129,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Missouri State,Conference USA,-18.77,-9.77,9,150,213,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Ball State,Mid-American,-19.12,-6.67,12.45,128,168,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Akron,Mid-American,-19.77,-12.05,7.73,151,159,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Bowling Green,Mid-American,-21.35,-14.35,6.99,114,131,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,UTEP,Mountain West,-22.6,-7.87,14.72,106,141,core-v1
+2026-09-28T13:46:49+00:00,2026,5,core,2026,regular,4,Western Kentucky,Conference USA,-28.57,-14.09,14.47,145,117,core-v1
