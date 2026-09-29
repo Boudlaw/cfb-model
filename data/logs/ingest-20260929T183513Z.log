@@ -1,0 +1,57 @@
+=== environment ===
+run_id     : 36613089324
+commit     : 4a27cd9b00a70f74d4a67cdd740859b397441ee5
+python     : Python 3.12.14
+key present: true
+smoke      : true
+data dir: /home/runner/work/cfb-model/cfb-model/data
+=== smoke: season 2026 week 1 ===
+/plays -> 17325 rows
+  observed keys: ['away', 'clock', 'defense', 'defenseConference', 'defenseScore', 'defenseTimeouts', 'distance', 'down', 'driveId', 'driveNumber', 'gameId', 'home', 'id', 'offense', 'offenseConference', 'offenseScore', 'offenseTimeouts', 'period', 'playNumber', 'playText', 'playType', 'ppa', 'scoring', 'wallclock', 'yardline', 'yardsGained', 'yardsToGoal']
+  playType distribution (n, ppa null, down null, scrimmage?):
+    Rush                                     6264     10      0   yes
+    Pass Reception                           3299      9      0   yes
+    Pass Incompletion                        2030      6      0   yes
+    Kickoff                                  1053   1053      0   no
+    Timeout                                   954    954    111   no
+    Penalty                                   942    942     24   no
+    Punt                                      587    587      0   no
+    Rushing Touchdown                         345      0      0   yes
+    Sack                                      309      0      0   yes
+    End Period                                296      9      8   no
+    Punt Return                               269    269      0   no
+    Passing Touchdown                         262      0      0   yes
+    Field Goal Good                           204    204      0   no
+    Fumble Recovery (Own)                     104      2      2   yes
+    End of Game                                97     97      3   no
+    Pass Interception Return                   73      0      0   yes
+    Fumble Recovery (Opponent)                 66      1      1   yes
+    Field Goal Missed                          60     60      0   no
+    Interception                               52      1      0   yes
+    Interception Return Touchdown              12      0      0   yes
+    Fumble                                      9      2      1   yes
+    Safety                                      8      2      1   yes
+    Punt Return Touchdown                       6      0      0   no
+    Fumble Return Touchdown                     5      0      0   yes
+    Blocked Field Goal                          4      4      0   no
+    Kickoff Return Touchdown                    4      4      0   no
+    Kickoff Return (Offense)                    4      4      0   no
+    End of Half                                 2      2      2   no
+    Two Point Pass                              2      2      2   no
+    Defensive 2pt Conversion                    1      1      1   yes
+    Blocked Punt Touchdown                      1      0      0   no
+    End of Regulation                           1      1      0   no
+  scrimmage plays: 12839, with ppa: 12805 (99.7%)
+  OK: ppa is populated on 99.7% of scrimmage plays. Nulls are concentrated in kicks, which the model drops anyway.
+/games -> 455 rows
+  observed keys: ['attendance', 'awayClassification', 'awayConference', 'awayId', 'awayLineScores', 'awayPoints', 'awayPostgameElo', 'awayPostgameWinProbability', 'awayPregameElo', 'awayTeam', 'completed', 'conferenceGame', 'excitementIndex', 'highlights', 'homeClassification', 'homeConference', 'homeId', 'homeLineScores', 'homePoints', 'homePostgameElo', 'homePostgameWinProbability', 'homePregameElo', 'homeTeam', 'id', 'neutralSite', 'notes', 'playoff', 'season', 'seasonType', 'startDate', 'startTimeTBD', 'venue', 'venueId', 'week']
+  FBS-vs-FBS: 51, with final scores: 51
+/lines -> 170 rows
+  observed keys: ['awayClassification', 'awayConference', 'awayScore', 'awayTeam', 'awayTeamId', 'homeClassification', 'homeConference', 'homeScore', 'homeTeam', 'homeTeamId', 'id', 'lines', 'season', 'seasonType', 'startDate', 'week']
+  260 provider-rows across 170 games
+  provider (rows, with spread, with spreadOpen):
+    DraftKings                 170   170   152
+    Bovada                      90    90    90
+  games with an OPENING line from at least one provider: 158/170
+=== smoke verdict: SAFE TO INGEST ===
+ingest.py exit code: 0
