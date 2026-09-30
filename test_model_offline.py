@@ -675,6 +675,140 @@ def _t39() -> None:
     assert grid["n_games"].min() > 0
 
 
+# ---------------------------------------------------------------------------
+# Real-data findings from the 2022-2025 pull. These seven exist because the
+# bugs they pin were each found in production data, not in review, and each one
+# produced a plausible-looking wrong number rather than an error.
+# ---------------------------------------------------------------------------
+
+
+def _play(**kw: Any) -> dict:
+    """One raw play row with sane defaults; override what the test is about."""
+    base = dict(
+        season=2024, week=5, game_id=1, offense="A", defense="B",
+        home="A", away="B", down=1, distance=10, yards_gained=5,
+        play_type="Rush", period=1, offense_score=7, defense_score=7, ppa=0.1,
+    )
+    base.update(kw)
+    return base
+
+
+@check("SIGN FIX: a pick-six is not an offensive success")
+def _t40() -> None:
+    # yards_gained on a turnover is the DEFENSE's return. The raw Connelly rule
+    # reads +65 on 1st-and-10 and calls it a success for the offense that threw it.
+    raw = pd.DataFrame([
+        _play(play_type="Interception Return Touchdown", yards_gained=65, ppa=-8.0),
+        _play(play_type="Pass Interception Return", yards_gained=22, ppa=-1.3),
+        _play(play_type="Fumble Recovery (Opponent)", yards_gained=14, ppa=-1.6),
+        _play(play_type="Fumble Return Touchdown", yards_gained=40, ppa=-6.4),
+    ])
+    p = F.prepare_plays(raw)
+    assert len(p) == 4, p
+    assert (p["success"] == 0).all(), p[["play_type", "yards_gained", "success"]]
+    # EPA is left alone — it was already correct, which is what exposed the bug.
+    assert (p["epa"] < 0).all(), p[["play_type", "epa"]]
+
+
+@check("SIGN FIX: a genuine long gain is still a success, and own-fumble recovery is judged normally")
+def _t41() -> None:
+    raw = pd.DataFrame([
+        _play(play_type="Rush", yards_gained=65, ppa=4.0),                    # real gain
+        _play(play_type="Fumble Recovery (Own)", yards_gained=12, ppa=0.5),   # offense keeps it
+        _play(play_type="Fumble Recovery (Own)", down=1, distance=10,
+              yards_gained=1, ppa=-0.6),                                      # kept, but a failure
+    ])
+    p = F.prepare_plays(raw)
+    assert list(p["success"]) == [1, 1, 0], p[["play_type", "yards_gained", "success"]]
+
+
+@check("restrict_to_teams drops games against teams outside the design")
+def _t42() -> None:
+    # classification=fbs on /plays returns FBS-vs-FCS games whole, which put 238
+    # teams into a design built for 136.
+    raw = pd.DataFrame([
+        _play(offense="A", defense="B"),
+        _play(offense="B", defense="A"),
+        _play(offense="A", defense="Tiny State", home="A", away="Tiny State"),
+        _play(offense="Tiny State", defense="A", home="A", away="Tiny State"),
+    ])
+    p = F.prepare_plays(raw)
+    assert len(p) == 4
+    r = F.restrict_to_teams(p, ["A", "B"])
+    assert len(r) == 2, r[["offense", "defense"]]
+    assert set(r["offense"]) | set(r["defense"]) == {"A", "B"}
+    assert r.attrs["restrict_dropped"] == 2
+
+
+@check("Fumble is a scrimmage snap; Defensive 2pt Conversion is not; neither is unknown")
+def _t43() -> None:
+    raw = pd.DataFrame([
+        _play(play_type="Fumble", yards_gained=3, ppa=-0.2),
+        _play(play_type="Defensive 2pt Conversion", yards_gained=0, ppa=None),
+    ])
+    p = F.prepare_plays(raw)
+    assert list(p["play_type"]) == ["Fumble"], p
+    rep = F.drop_report(raw)
+    assert rep["unknown_play_types"] == [], rep["unknown_play_types"]
+
+
+@check("GATE: the +0.17 mean-EPA shift PASSES (the old near-zero gate failed on correct data)")
+def _t44() -> None:
+    # Punts, kickoffs and field goals carry no ppa at all, so the drive-ending
+    # negatives that would balance the ledger are absent by construction.
+    raw, _, _ = synth()
+    base = F.prepare_plays(raw)
+
+    # The shift alone, on the untouched EPA distribution. This is the case the
+    # old abs(epa) < 0.15 gate rejected.
+    shifted = base.copy()
+    shifted["epa"] = shifted["epa"] + 0.17
+    rep = F.sanity_report(shifted)
+    assert rep["mean_epa_ok"], rep["mean_epa"]
+    assert rep["sd_epa_ok"], rep["sd_epa"]
+    assert rep["passes"], rep
+
+    # And a uniform shift must not disturb the ordering, which is the whole
+    # reason ordering replaced the moment as the real evidence.
+    planted = base.copy()
+    planted["play_type"] = np.resize(np.array(F.EPA_ORDERING, dtype=object), len(planted))
+    for i, pt in enumerate(F.EPA_ORDERING):
+        planted.loc[planted["play_type"] == pt, "epa"] = 1.5 - 0.5 * i
+    before = F.sanity_report(planted)["epa_ordering_ok"]
+    planted["epa"] = planted["epa"] + 0.17
+    after = F.sanity_report(planted)
+    assert before is True and after["epa_ordering_ok"] is True, (before, after)
+    assert after["epa_ordering_applicable"] is True, after
+
+
+@check("GATE NEGATIVE CONTROL: a sign-flipped EPA column FAILS the ordering check")
+def _t45() -> None:
+    raw, _, _ = synth()
+    p = F.prepare_plays(raw).copy()
+    p["play_type"] = np.resize(np.array(F.EPA_ORDERING, dtype=object), len(p))
+    for i, pt in enumerate(F.EPA_ORDERING):
+        p.loc[p["play_type"] == pt, "epa"] = 3.2 - 0.9 * i
+    good = F.sanity_report(p)
+    assert good["epa_ordering_ok"] is True, good
+
+    p["epa"] = -p["epa"]  # the whole point: this must be caught
+    bad = F.sanity_report(p)
+    assert bad["epa_ordering_ok"] is False, bad
+    assert bad["passes"] is False, bad
+    assert "EPA ordering violated" in bad["reason"], bad["reason"]
+
+
+@check("GATE: ordering reports NOT APPLICABLE rather than passing on a two-play-type fixture")
+def _t46() -> None:
+    raw, _, _ = synth()
+    p = F.prepare_plays(raw)
+    rep = F.sanity_report(p)
+    assert set(p["play_type"].unique()) <= {"Pass", "Rush"}, p["play_type"].unique()
+    assert rep["epa_ordering_applicable"] is False, rep
+    assert rep["epa_ordering_ok"] is None, rep
+    assert rep["passes"] is True, rep
+
+
 def main() -> int:
     print("offline model test suite — no network, synthetic truth\n")
     for t in TESTS:
