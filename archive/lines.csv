@@ -894,3 +894,74 @@ captured_at,capture_season,capture_week,source,id,season,seasonType,week,startDa
 2026-09-29T17:07:28+00:00,2026,6,lines,401866435,2026,regular,6,2026-10-10T19:30:00.000Z,2006,Akron,Mid-American,fbs,,2199,Eastern Michigan,Mid-American,fbs,,,,,,,,,
 2026-09-29T17:07:28+00:00,2026,6,lines,401860922,2026,regular,6,2026-10-10T01:00:00.000Z,328,Utah State,Pac-12,fbs,,265,Washington State,Pac-12,fbs,,,,,,,,,
 2026-09-29T17:07:28+00:00,2026,6,lines,401864519,2026,regular,6,2026-10-10T01:00:00.000Z,23,San José State,Mountain West,fbs,,2751,Wyoming,Mountain West,fbs,,,,,,,,,
+2026-10-05T13:49:21+00:00,2026,6,lines,401858485,2026,regular,6,2026-10-10T23:30:00.000Z,213,Penn State,Big Ten,fbs,,30,USC,Big Ten,fbs,,DraftKings,-1.5,Penn State -1.5,-1.5,58.5,56.5,-115,-105
+2026-10-05T13:49:21+00:00,2026,6,lines,401858485,2026,regular,6,2026-10-10T23:30:00.000Z,213,Penn State,Big Ten,fbs,,30,USC,Big Ten,fbs,,Bovada,-1,Penn State -1.0,1,54,56,-105,-115
+2026-10-05T13:49:21+00:00,2026,6,lines,401856712,2026,regular,6,2026-10-10T23:30:00.000Z,333,Alabama,SEC,fbs,,61,Georgia,SEC,fbs,,DraftKings,2.5,Georgia -2.5,3,56.5,50.5,105,-125
+2026-10-05T13:49:21+00:00,2026,6,lines,401856712,2026,regular,6,2026-10-10T23:30:00.000Z,333,Alabama,SEC,fbs,,61,Georgia,SEC,fbs,,Bovada,-1.5,Alabama -1.5,1,55.5,55.5,-110,-110
+2026-10-05T13:49:21+00:00,2026,6,lines,401856717,2026,regular,6,2026-10-10T19:30:00.000Z,201,Oklahoma,SEC,fbs,,251,Texas,SEC,fbs,,DraftKings,9.5,Texas -9.5,6,41.5,48.5,300,-380
+2026-10-05T13:49:21+00:00,2026,6,lines,401856717,2026,regular,6,2026-10-10T19:30:00.000Z,201,Oklahoma,SEC,fbs,,251,Texas,SEC,fbs,,Bovada,9,Texas -9.0,8,39,40,260,-320
+2026-10-05T13:49:21+00:00,2026,6,lines,401861964,2026,regular,6,2026-10-10T19:45:00.000Z,218,Temple,American Athletic,fbs,,41,UConn,FBS Independents,fbs,,Bovada,-4,Temple -4.0,-4,54.5,53,-185,160
+2026-10-05T13:49:21+00:00,2026,6,lines,401866435,2026,regular,6,2026-10-10T19:30:00.000Z,2006,Akron,Mid-American,fbs,,2199,Eastern Michigan,Mid-American,fbs,,Bovada,7,Eastern Michigan -7.0,6,51,51,190,-230
+2026-10-05T13:49:21+00:00,2026,6,lines,401871090,2026,regular,6,2026-10-07T00:00:00.000Z,2653,Troy,Sun Belt,fbs,,2572,Southern Miss,Sun Belt,fbs,,DraftKings,-9.5,Troy -9.5,-8.5,48.5,48.5,-355,280
+2026-10-05T13:49:21+00:00,2026,6,lines,401871090,2026,regular,6,2026-10-07T00:00:00.000Z,2653,Troy,Sun Belt,fbs,,2572,Southern Miss,Sun Belt,fbs,,Bovada,-10.5,Troy -10.5,-10.5,49.5,49.5,-420,315
+2026-10-05T13:49:21+00:00,2026,6,lines,401858481,2026,regular,6,2026-10-10T16:00:00.000Z,158,Nebraska,Big Ten,fbs,,84,Indiana,Big Ten,fbs,,DraftKings,8.5,Indiana -8.5,9.5,50.5,50.5,285,-360
+2026-10-05T13:49:21+00:00,2026,6,lines,401858481,2026,regular,6,2026-10-10T16:00:00.000Z,158,Nebraska,Big Ten,fbs,,84,Indiana,Big Ten,fbs,,Bovada,7.5,Indiana -7.5,8.5,52,51.5,270,-340
+2026-10-05T13:49:21+00:00,2026,6,lines,401856714,2026,regular,6,2026-10-10T16:45:00.000Z,57,Florida,SEC,fbs,,2579,South Carolina,SEC,fbs,,DraftKings,-14.5,Florida -14.5,-14.5,57.5,57.5,-675,490
+2026-10-05T13:49:21+00:00,2026,6,lines,401856714,2026,regular,6,2026-10-10T16:45:00.000Z,57,Florida,SEC,fbs,,2579,South Carolina,SEC,fbs,,Bovada,-14,Florida -14.0,-14,62,61,-650,450
+2026-10-05T13:49:21+00:00,2026,6,lines,401856716,2026,regular,6,2026-10-10T16:00:00.000Z,142,Missouri,SEC,fbs,,245,Texas A&M,SEC,fbs,,DraftKings,-1.5,Missouri -1.5,-1.5,50.5,50.5,-118,-102
+2026-10-05T13:49:21+00:00,2026,6,lines,401856716,2026,regular,6,2026-10-10T16:00:00.000Z,142,Missouri,SEC,fbs,,245,Texas A&M,SEC,fbs,,Bovada,-3.5,Missouri -3.5,-5,48,48,-200,170
+2026-10-05T13:49:21+00:00,2026,6,lines,401871051,2026,regular,6,2026-10-07T23:00:00.000Z,338,Kennesaw State,Conference USA,fbs,,55,Jacksonville State,Conference USA,fbs,,DraftKings,2.5,Jacksonville State -2.5,2.5,48.5,48.5,120,-142
+2026-10-05T13:49:21+00:00,2026,6,lines,401871051,2026,regular,6,2026-10-07T23:00:00.000Z,338,Kennesaw State,Conference USA,fbs,,55,Jacksonville State,Conference USA,fbs,,Bovada,3,Jacksonville State -3.0,3,50,50,140,-165
+2026-10-05T13:49:21+00:00,2026,6,lines,401856826,2026,regular,6,2026-10-10T02:15:00.000Z,252,BYU,Big 12,fbs,,66,Iowa State,Big 12,fbs,,DraftKings,-14.5,BYU -14.5,-14.5,50.5,50.5,-625,455
+2026-10-05T13:49:21+00:00,2026,6,lines,401856826,2026,regular,6,2026-10-10T02:15:00.000Z,252,BYU,Big 12,fbs,,66,Iowa State,Big 12,fbs,,Bovada,-10.5,BYU -10.5,-11,48.5,47.5,-440,330
+2026-10-05T13:49:21+00:00,2026,6,lines,401858256,2026,regular,6,2026-10-10T16:00:00.000Z,221,Pittsburgh,ACC,fbs,,153,North Carolina,ACC,fbs,,Bovada,-4,Pittsburgh -4.0,-4,47,47,-185,160
+2026-10-05T13:49:21+00:00,2026,6,lines,401858487,2026,regular,6,2026-10-10T01:00:00.000Z,264,Washington,Big Ten,fbs,,2294,Iowa,Big Ten,fbs,,DraftKings,-1.5,Washington -1.5,-1.5,41.5,41.5,-112,-108
+2026-10-05T13:49:21+00:00,2026,6,lines,401858487,2026,regular,6,2026-10-10T01:00:00.000Z,264,Washington,Big Ten,fbs,,2294,Iowa,Big Ten,fbs,,Bovada,-3,Washington -3.0,-2.5,42,42.5,-130,110
+2026-10-05T13:49:21+00:00,2026,6,lines,401866437,2026,regular,6,2026-10-10T19:30:00.000Z,2649,Toledo,Mid-American,fbs,,2084,Buffalo,Mid-American,fbs,,Bovada,-20,Toledo -20.0,-19.5,55,55,-1200,700
+2026-10-05T13:49:21+00:00,2026,6,lines,401856824,2026,regular,6,2026-10-10T16:00:00.000Z,197,Oklahoma State,Big 12,fbs,,2116,UCF,Big 12,fbs,,Bovada,-9.5,Oklahoma State -9.5,-10.5,54,54,-430,320
+2026-10-05T13:49:21+00:00,2026,6,lines,401866440,2026,regular,6,2026-10-10T18:00:00.000Z,113,Massachusetts,Mid-American,fbs,,193,Miami (OH),Mid-American,fbs,,Bovada,3,Miami (OH) -3.0,2.5,47.5,48,115,-135
+2026-10-05T13:49:21+00:00,2026,6,lines,401871066,2026,regular,6,2026-10-07T23:30:00.000Z,2229,Florida International,Conference USA,fbs,,166,New Mexico State,Conference USA,fbs,,DraftKings,-3.5,Florida International -3.5,-3.5,47.5,47.5,-162,136
+2026-10-05T13:49:21+00:00,2026,6,lines,401871066,2026,regular,6,2026-10-07T23:30:00.000Z,2229,Florida International,Conference USA,fbs,,166,New Mexico State,Conference USA,fbs,,Bovada,-5.5,Florida International -5.5,-5,46.5,46.5,-200,170
+2026-10-05T13:49:21+00:00,2026,6,lines,401862799,2026,regular,6,2026-10-10T19:30:00.000Z,2426,Navy,American Athletic,fbs,,202,Tulsa,American Athletic,fbs,,Bovada,-3,Navy -3.0,-2.5,49,49.5,-130,110
+2026-10-05T13:49:21+00:00,2026,6,lines,401858484,2026,regular,6,2026-10-10T19:30:00.000Z,2483,Oregon,Big Ten,fbs,,26,UCLA,Big Ten,fbs,,DraftKings,-12.5,Oregon -12.5,-12.5,60.5,60.5,-485,370
+2026-10-05T13:49:21+00:00,2026,6,lines,401858484,2026,regular,6,2026-10-10T19:30:00.000Z,2483,Oregon,Big Ten,fbs,,26,UCLA,Big Ten,fbs,,Bovada,-12,Oregon -12.0,-11.5,60,59.5,-470,345
+2026-10-05T13:49:21+00:00,2026,6,lines,401856823,2026,regular,6,2026-10-10T16:00:00.000Z,277,West Virginia,Big 12,fbs,,12,Arizona,Big 12,fbs,,Bovada,2.5,Arizona -2.5,3,60,60,125,-145
+2026-10-05T13:49:21+00:00,2026,6,lines,401858259,2026,regular,6,2026-10-10T19:30:00.000Z,25,California,ACC,fbs,,259,Virginia Tech,ACC,fbs,,Bovada,8.5,Virginia Tech -8.5,9.5,53,53,285,-370
+2026-10-05T13:49:21+00:00,2026,6,lines,401856715,2026,regular,6,2026-10-10T23:00:00.000Z,96,Kentucky,SEC,fbs,,99,LSU,SEC,fbs,,Bovada,10,LSU -10.0,10,54.5,55.5,295,-390
+2026-10-05T13:49:21+00:00,2026,6,lines,401856715,2026,regular,6,2026-10-10T23:00:00.000Z,96,Kentucky,SEC,fbs,,99,LSU,SEC,fbs,,DraftKings,10,LSU -10,10.5,50.5,49.5,280,-355
+2026-10-05T13:49:21+00:00,2026,6,lines,401858483,2026,regular,6,2026-10-10T20:15:00.000Z,194,Ohio State,Big Ten,fbs,,120,Maryland,Big Ten,fbs,,Bovada,-35,Ohio State -35.0,-35,56,56,,
+2026-10-05T13:49:21+00:00,2026,6,lines,401864517,2026,regular,6,2026-10-10T23:00:00.000Z,2638,UTEP,Mountain West,fbs,,2440,Nevada,Mountain West,fbs,,Bovada,9.5,Nevada -9.5,9,49.5,49.5,280,-360
+2026-10-05T13:49:21+00:00,2026,6,lines,401866439,2026,regular,6,2026-10-10T19:30:00.000Z,2711,Western Michigan,Mid-American,fbs,,2309,Kent State,Mid-American,fbs,,Bovada,-14,Western Michigan -14.0,-14,43.5,45.5,-650,450
+2026-10-05T13:49:21+00:00,2026,6,lines,401869843,2026,regular,6,2026-10-10T17:00:00.000Z,2026,App State,Sun Belt,fbs,,295,Old Dominion,Sun Belt,fbs,,Bovada,-10,App State -10.0,-10,51,51,-390,295
+2026-10-05T13:49:21+00:00,2026,6,lines,401858258,2026,regular,6,2026-10-10T23:30:00.000Z,258,Virginia,ACC,fbs,,183,Syracuse,ACC,fbs,,Bovada,-9.5,Virginia -9.5,-9.5,49.5,49.5,-370,285
+2026-10-05T13:49:21+00:00,2026,6,lines,401864516,2026,regular,6,2026-10-10T23:30:00.000Z,2459,Northern Illinois,Mountain West,fbs,,2005,Air Force,Mountain West,fbs,,Bovada,10,Air Force -10.0,11.5,47.5,47.5,350,-480
+2026-10-05T13:49:21+00:00,2026,6,lines,401862796,2026,regular,6,2026-10-10T19:30:00.000Z,249,North Texas,American Athletic,fbs,,2429,Charlotte,American Athletic,fbs,,Bovada,-27,North Texas -27.0,-27,59.5,59.5,-5000,1300
+2026-10-05T13:49:21+00:00,2026,6,lines,401869965,2026,regular,6,2026-10-10T23:30:00.000Z,2348,Louisiana Tech,Sun Belt,fbs,,309,Louisiana,Sun Belt,fbs,,Bovada,-3,Louisiana Tech -3.0,-2.5,48.5,49.5,-140,120
+2026-10-05T13:49:21+00:00,2026,6,lines,401856718,2026,regular,6,2026-10-10T19:30:00.000Z,238,Vanderbilt,SEC,fbs,,145,Ole Miss,SEC,fbs,,Bovada,9.5,Ole Miss -9.5,10,59,59,305,-410
+2026-10-05T13:49:21+00:00,2026,6,lines,401858486,2026,regular,6,2026-10-11T00:00:00.000Z,2509,Purdue,Big Ten,fbs,,135,Minnesota,Big Ten,fbs,,Bovada,2.5,Minnesota -2.5,2,51,51.5,110,-130
+2026-10-05T13:49:21+00:00,2026,6,lines,401860901,2026,regular,6,2026-10-11T02:30:00.000Z,278,Fresno State,Pac-12,fbs,,68,Boise State,Pac-12,fbs,,Bovada,5,Boise State -5.0,6.5,48.5,48.5,205,-245
+2026-10-05T13:49:21+00:00,2026,6,lines,401858260,2026,regular,6,2026-10-10T16:00:00.000Z,152,NC State,ACC,fbs,,154,Wake Forest,ACC,fbs,,Bovada,3,Wake Forest -3.0,3.5,60,60,150,-175
+2026-10-05T13:49:21+00:00,2026,6,lines,401862795,2026,regular,6,2026-10-10T16:00:00.000Z,349,Army,American Athletic,fbs,,2655,Tulane,American Athletic,fbs,,Bovada,-3,Army -3.0,-3,47,45.5,-160,135
+2026-10-05T13:49:21+00:00,2026,6,lines,401866438,2026,regular,6,2026-10-10T19:30:00.000Z,195,Ohio,Mid-American,fbs,,2117,Central Michigan,Mid-American,fbs,,Bovada,-3.5,Ohio -3.5,-3.5,47,47,-175,150
+2026-10-05T13:49:21+00:00,2026,6,lines,401864518,2026,regular,6,2026-10-10T23:00:00.000Z,2439,UNLV,Mountain West,fbs,,2449,North Dakota State,Mountain West,fbs,,Bovada,3,North Dakota State -3.0,3,49.5,49.5,135,-160
+2026-10-05T13:49:21+00:00,2026,6,lines,401862794,2026,regular,6,2026-10-08T23:30:00.000Z,2636,UTSA,American Athletic,fbs,,58,South Florida,American Athletic,fbs,,Bovada,-7,UTSA -7.0,-6.5,52.5,52.5,-260,215
+2026-10-05T13:49:21+00:00,2026,6,lines,401858255,2026,regular,6,2026-10-10T19:30:00.000Z,59,Georgia Tech,ACC,fbs,,150,Duke,ACC,fbs,,Bovada,7,Duke -7.0,7,50,49,225,-275
+2026-10-05T13:49:21+00:00,2026,6,lines,401862797,2026,regular,6,2026-10-10T20:00:00.000Z,151,East Carolina,American Athletic,fbs,,242,Rice,American Athletic,fbs,,Bovada,-10,East Carolina -10.0,-10,50,50,-410,305
+2026-10-05T13:49:21+00:00,2026,6,lines,401858254,2026,regular,6,2026-10-09T23:00:00.000Z,97,Louisville,ACC,fbs,,52,Florida State,ACC,fbs,,Bovada,-5,Louisville -5.0,-6,59.5,57.5,-230,190
+2026-10-05T13:49:21+00:00,2026,6,lines,401858482,2026,regular,6,2026-10-10T16:30:00.000Z,77,Northwestern,Big Ten,fbs,,2050,Ball State,Mid-American,fbs,,Bovada,-36,Northwestern -36.0,-36,53,53,,
+2026-10-05T13:49:21+00:00,2026,6,lines,401866436,2026,regular,6,2026-10-10T16:00:00.000Z,189,Bowling Green,Mid-American,fbs,,16,Sacramento State,Mid-American,fbs,,Bovada,-7,Bowling Green -7.0,-7,42.5,44,-275,225
+2026-10-05T13:49:21+00:00,2026,6,lines,401860902,2026,regular,6,2026-10-10T22:00:00.000Z,204,Oregon State,Pac-12,fbs,,21,San Diego State,Pac-12,fbs,,Bovada,-13.5,Oregon State -13.5,-14,56,56,-625,430
+2026-10-05T13:49:21+00:00,2026,6,lines,401869933,2026,regular,6,2026-10-08T23:30:00.000Z,2032,Arkansas State,Sun Belt,fbs,,6,South Alabama,Sun Belt,fbs,,Bovada,-1,Arkansas State -1.0,-1,57,58,-115,-105
+2026-10-05T13:49:21+00:00,2026,6,lines,401860922,2026,regular,6,2026-10-10T01:00:00.000Z,328,Utah State,Pac-12,fbs,,265,Washington State,Pac-12,fbs,,Bovada,-3.5,Utah State -3.5,-4,43.5,43.5,-180,155
+2026-10-05T13:49:21+00:00,2026,6,lines,401870766,2026,regular,6,2026-10-08T23:00:00.000Z,2335,Liberty,Conference USA,fbs,,2534,Sam Houston,Conference USA,fbs,,Bovada,-14,Liberty -14.0,-14,52.5,52.5,-600,425
+2026-10-05T13:49:21+00:00,2026,6,lines,401864519,2026,regular,6,2026-10-10T01:00:00.000Z,23,San José State,Mountain West,fbs,,2751,Wyoming,Mountain West,fbs,,Bovada,-6.5,San José State -6.5,-6.5,43.5,44,-245,205
+2026-10-05T13:49:21+00:00,2026,6,lines,401858480,2026,regular,6,2026-10-10T19:30:00.000Z,127,Michigan State,Big Ten,fbs,,356,Illinois,Big Ten,fbs,,Bovada,3.5,Illinois -3.5,3.5,50,50,150,-175
+2026-10-05T13:49:21+00:00,2026,6,lines,401856825,2026,regular,6,2026-10-10T19:30:00.000Z,2306,Kansas State,Big 12,fbs,,248,Houston,Big 12,fbs,,Bovada,-2.5,Kansas State -2.5,-2.5,56,56,-140,120
+2026-10-05T13:49:21+00:00,2026,6,lines,401858257,2026,regular,6,2026-10-10T19:30:00.000Z,87,Notre Dame,FBS Independents,fbs,,24,Stanford,ACC,fbs,,Bovada,-38,Notre Dame -38.0,-38,54.5,54.5,,
+2026-10-05T13:49:21+00:00,2026,6,lines,401871052,2026,regular,6,2026-10-08T23:00:00.000Z,98,Western Kentucky,Conference USA,fbs,,2623,Missouri State,Conference USA,fbs,,Bovada,-2.5,Western Kentucky -2.5,-2.5,55.5,55.5,-130,110
+2026-10-05T13:49:21+00:00,2026,6,lines,401856827,2026,regular,6,2026-10-11T02:15:00.000Z,254,Utah,Big 12,fbs,,2305,Kansas,Big 12,fbs,,Bovada,-15.5,Utah -15.5,-15.5,52,52,-750,500
+2026-10-05T13:49:21+00:00,2026,6,lines,401856808,2026,regular,6,2026-10-11T01:30:00.000Z,9,Arizona State,Big 12,fbs,,62,Hawai'i,Mountain West,fbs,,Bovada,-20.5,Arizona State -20.5,-22,50.5,51,-1900,900
+2026-10-05T13:49:21+00:00,2026,6,lines,401862798,2026,regular,6,2026-10-10T23:00:00.000Z,235,Memphis,American Athletic,fbs,,5,UAB,American Athletic,fbs,,Bovada,-14,Memphis -14.0,-14.5,58.5,58.5,-675,460
+2026-10-05T13:49:21+00:00,2026,6,lines,401869949,2026,regular,6,2026-10-10T23:30:00.000Z,290,Georgia Southern,Sun Belt,fbs,,256,James Madison,Sun Belt,fbs,,Bovada,9,James Madison -9.0,9.5,53.5,53.5,285,-370
+2026-10-05T13:49:21+00:00,2026,6,lines,401856713,2026,regular,6,2026-10-10T20:15:00.000Z,8,Arkansas,SEC,fbs,,2633,Tennessee,SEC,fbs,,Bovada,13.5,Tennessee -13.5,13.5,51,50,410,-585
+2026-10-05T13:49:21+00:00,2026,6,lines,401869943,2026,regular,6,2026-10-10T23:00:00.000Z,276,Marshall,Sun Belt,fbs,,324,Coastal Carolina,Sun Belt,fbs,,,,,,,,,

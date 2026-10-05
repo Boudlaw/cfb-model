@@ -1,0 +1,64 @@
+=== environment ===
+run_id      : 37319748741
+triggered by: workflow_dispatch
+python      : Python 3.12.14
+workspace   : /home/runner/work/cfb-model/cfb-model
+key present : true
+--- repo root ---
+total 280
+drwxr-xr-x 6 runner runner  4096 Oct  5 13:49 .
+drwxr-xr-x 3 runner runner  4096 Oct  5 13:49 ..
+drwxr-xr-x 7 runner runner  4096 Oct  5 13:49 .git
+drwxr-xr-x 3 runner runner  4096 Oct  5 13:49 .github
+-rw-r--r-- 1 runner runner   156 Oct  5 13:49 .gitignore
+-rw-r--r-- 1 runner runner  5312 Oct  5 13:49 MODEL.md
+-rw-r--r-- 1 runner runner  4452 Oct  5 13:49 README.md
+-rw-r--r-- 1 runner runner  2699 Oct  5 13:49 SETUP.md
+drwxr-xr-x 4 runner runner  4096 Oct  5 13:49 archive
+-rw-r--r-- 1 runner runner 21410 Oct  5 13:49 archive.py
+-rw-r--r-- 1 runner runner 15212 Oct  5 13:49 backtest.py
+drwxr-xr-x 3 runner runner  4096 Oct  5 13:49 data
+-rw-r--r-- 1 runner runner  5060 Oct  5 13:49 ensemble_test.py
+-rw-r--r-- 1 runner runner 18358 Oct  5 13:49 features.py
+-rw-r--r-- 1 runner runner 21527 Oct  5 13:49 ingest.py
+-rw-r--r-- 1 runner runner  8828 Oct  5 13:49 lambda_experiment.py
+-rw-r--r-- 1 runner runner  7112 Oct  5 13:49 picks.py
+-rw-r--r-- 1 runner runner  7397 Oct  5 13:49 predict_week.py
+-rw-r--r-- 1 runner runner  4668 Oct  5 13:49 prep_cache.py
+-rw-r--r-- 1 runner runner 19557 Oct  5 13:49 ratings.py
+-rw-r--r-- 1 runner runner   407 Oct  5 13:49 requirements-model.txt
+-rw-r--r-- 1 runner runner   174 Oct  5 13:49 requirements.txt
+-rw-r--r-- 1 runner runner 10677 Oct  5 13:49 run_baseline.py
+-rw-r--r-- 1 runner runner  7665 Oct  5 13:49 run_model.py
+-rw-r--r-- 1 runner runner  8550 Oct  5 13:49 slate.py
+-rw-r--r-- 1 runner runner 33822 Oct  5 13:49 test_model_offline.py
+-rw-r--r-- 1 runner runner  4868 Oct  5 13:49 test_offline.py
+=== smoke ===
+[2026-10-05T13:49:19+00:00] smoke test — season 2026, week 6 (python 3.12.14)
+[2026-10-05T13:49:19+00:00] archive dir would be: /home/runner/work/cfb-model/cfb-model/archive
+[2026-10-05T13:49:19+00:00] CFBD_API_KEY: set, 64 chars
+[2026-10-05T13:49:19+00:00]   OK   CFBD /teams/fbs  (138 items/bytes)
+[2026-10-05T13:49:19+00:00]   OK   CFBD /ratings/sp  (139 items/bytes)
+[2026-10-05T13:49:19+00:00]   OK   CFBD /ratings/fpi  (138 items/bytes)
+[2026-10-05T13:49:19+00:00]   OK   CFBD /ratings/elo  (138 items/bytes)
+[2026-10-05T13:49:20+00:00]   OK   CFBD /ratings/srs  (268 items/bytes)
+[2026-10-05T13:49:20+00:00]   OK   CFBD /ratings/core  (138 items/bytes)
+[2026-10-05T13:49:20+00:00]   OK   CFBD /lines  (58 items/bytes)
+[2026-10-05T13:49:20+00:00]   OK   CFBD /games  (277 items/bytes)
+[2026-10-05T13:49:20+00:00]   OK   Sonny Moore page  (20865 items/bytes)
+[2026-10-05T13:49:20+00:00]   OK   Pi-Rate page  (728433 items/bytes)
+[2026-10-05T13:49:20+00:00] smoke: 10/10 passed
+=== capture ===
+[2026-10-05T13:49:20+00:00] archiving season 2026 week 6 -> /home/runner/work/cfb-model/cfb-model/archive
+[2026-10-05T13:49:21+00:00]   sp_plus: +139 rows
+[2026-10-05T13:49:21+00:00]   fpi: +138 rows
+[2026-10-05T13:49:21+00:00]   lines: +71 rows
+[2026-10-05T13:49:22+00:00]   ppa: +138 rows
+[2026-10-05T13:49:22+00:00]   elo: +138 rows
+[2026-10-05T13:49:22+00:00]   srs: +268 rows
+[2026-10-05T13:49:22+00:00]   core: +138 rows
+[2026-10-05T13:49:22+00:00]   games: +277 rows
+[2026-10-05T13:49:22+00:00]   sonny_moore: +138 rows
+[2026-10-05T13:49:23+00:00]   pirate: +0 rows
+[2026-10-05T13:49:23+00:00] done: 1445 rows, 0 failure(s)
+archive.py exit code: 0
