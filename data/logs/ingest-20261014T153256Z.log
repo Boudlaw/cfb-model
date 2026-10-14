@@ -1,0 +1,13 @@
+=== environment ===
+run_id     : 38590273382
+commit     : 90262513878843bc7847dde35d5761f3088cd4b2
+python     : Python 3.12.15
+key present: true
+smoke      : false
+data dir: /home/runner/work/cfb-model/cfb-model/data
+=== season 2026 ===
+  plays_2026.csv.gz exists; skipping plays (use --no-resume to refetch)
+  games_2026.csv.gz exists; skipping
+  lines_2026.csv.gz exists; skipping
+=== done: 0 API calls, 0 failure(s) ===
+ingest.py exit code: 0
