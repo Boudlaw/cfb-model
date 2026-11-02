@@ -1,0 +1,15 @@
+=== environment ===
+run_id     : 41518745461
+commit     : 22ba82c50d47c6ca8a43c3b23fc96e6fd44902e7
+python     : Python 3.12.15
+key present: true
+smoke      : false
+data dir: /home/runner/work/cfb-model/cfb-model/data
+=== season 2026 ===
+  regular wk10:     0 plays
+  postseason wk 1:     0 plays
+  wrote plays_2026.csv.gz: 0 rows
+  wrote games_2026.csv.gz: 3678 rows
+  wrote lines_2026.csv.gz: 1852 rows
+=== done: 4 API calls, 0 failure(s) ===
+ingest.py exit code: 0
