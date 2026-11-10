@@ -2640,3 +2640,142 @@ captured_at,capture_season,capture_week,source,year,team,conference,rating,ranki
 2026-11-10T18:57:53+00:00,2026,12,sp_plus,2026,Northern Illinois,Mountain West,-26.9,137,,,133,13.7,,,,,,,,,136,40,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.7
 2026-11-10T18:57:53+00:00,2026,12,sp_plus,2026,Charlotte,American Athletic,-27.4,138,,,129,15,,,,,,,,,138,42,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.4
 2026-11-10T18:57:53+00:00,2026,12,sp_plus,2026,nationalAverages,,0.8260869565217391,,,,,26.679710144927537,,,,,,,,,,25.854347826086958,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.002173913043478261
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Georgia,SEC,31.3,1,,,4,40.5,,,,,,,,,1,9.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Notre Dame,FBS Independents,24.4,2,,,5,39.5,,,,,,,,,15,15.6,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Ohio State,Big Ten,24,3,,,11,37.6,,,,,,,,,8,13.9,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Miami,ACC,24,3,,,1,42.5,,,,,,,,,25,18.9,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Indiana,Big Ten,23.5,5,,,27,33.6,,,,,,,,,2,10,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Texas,SEC,23.5,5,,,21,35.2,,,,,,,,,4,12.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,LSU,SEC,22.9,7,,,12,37.4,,,,,,,,,9,14,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Alabama,SEC,22.7,8,,,10,37.9,,,,,,,,,16,15.7,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Utah,Big 12,21.5,9,,,6,38.8,,,,,,,,,19,17.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Tennessee,SEC,20.5,10,,,22,34.9,,,,,,,,,10,15,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,UCLA,Big Ten,20.2,11,,,29,33.3,,,,,,,,,6,13,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Wake Forest,ACC,20,12,,,12,37.4,,,,,,,,,23,17.9,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Texas Tech,Big 12,18.1,13,,,8,38.4,,,,,,,,,37,20.9,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Louisville,ACC,17.7,14,,,2,41.5,,,,,,,,,48,23.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Oregon,Big Ten,16.9,15,,,24,34.3,,,,,,,,,22,17.8,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Iowa,Big Ten,16.4,16,,,57,28.5,,,,,,,,,5,12.7,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,BYU,Big 12,16.2,17,,,32,33.1,,,,,,,,,20,17.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,SMU,ACC,15.8,18,,,16,36.7,,,,,,,,,35,20.7,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,USC,Big Ten,15.8,18,,,15,37,,,,,,,,,39,21.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Oklahoma State,Big 12,15.5,20,,,3,40.6,,,,,,,,,64,25.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Arizona,Big 12,15.4,21,,,19,35.8,,,,,,,,,33,20.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Liberty,Conference USA,15,22,,,33,32.4,,,,,,,,,21,17.6,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Nebraska,Big Ten,14.4,23,,,45,30,,,,,,,,,11,15.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,New Mexico,Mountain West,14.4,23,,,58,28.4,,,,,,,,,7,13.7,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Houston,Big 12,14.1,25,,,14,37.2,,,,,,,,,45,23.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Boise State,Pac-12,13.8,26,,,7,38.7,,,,,,,,,64,25.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,James Madison,Sun Belt,13.8,26,,,28,33.4,,,,,,,,,30,19.9,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Missouri,SEC,13.7,28,,,44,30.1,,,,,,,,,18,16.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,South Carolina,SEC,13.7,28,,,25,34,,,,,,,,,36,20.8,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Ole Miss,SEC,13.5,30,,,17,36.3,,,,,,,,,48,23.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.7
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Baylor,Big 12,13.3,31,,,39,31.2,,,,,,,,,24,18.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Duke,ACC,13,32,,,35,32.1,,,,,,,,,26,19,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Northwestern,Big Ten,12.4,33,,,33,32.4,,,,,,,,,30,19.9,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,North Dakota State,Mountain West,10.7,34,,,72,26.2,,,,,,,,,14,15.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Pittsburgh,ACC,10.2,35,,,43,30.2,,,,,,,,,34,20.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Michigan,Big Ten,10,36,,,99,22.1,,,,,,,,,3,11.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Memphis,American Athletic,9.6,37,,,19,35.8,,,,,,,,,70,26.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Penn State,Big Ten,9.3,38,,,54,28.7,,,,,,,,,27,19.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Wisconsin,Big Ten,9.1,39,,,89,24.1,,,,,,,,,13,15.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Washington,Big Ten,8.9,40,,,58,28.4,,,,,,,,,29,19.7,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Kentucky,SEC,8.3,41,,,36,31.7,,,,,,,,,44,23,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Texas A&M,SEC,8.3,41,,,63,27.8,,,,,,,,,32,20,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Illinois,Big Ten,8,43,,,41,31,,,,,,,,,45,23.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,TCU,Big 12,7.9,44,,,85,24.5,,,,,,,,,17,16.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Oklahoma,SEC,7.8,45,,,96,22.4,,,,,,,,,11,15.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Virginia Tech,ACC,6.6,46,,,39,31.2,,,,,,,,,59,24.6,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Florida,SEC,5.9,47,,,50,29.5,,,,,,,,,52,24.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.7
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Texas State,Pac-12,5.8,48,,,17,36.3,,,,,,,,,96,29.9,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Florida State,ACC,5.5,49,,,31,33.2,,,,,,,,,84,28,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,North Carolina,ACC,5.3,50,,,49,29.6,,,,,,,,,51,23.9,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Fresno State,Pac-12,4.9,51,,,67,27.1,,,,,,,,,43,22.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,North Texas,American Athletic,4.7,52,,,9,38.2,,,,,,,,,115,33.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Kansas State,Big 12,4.5,53,,,42,30.5,,,,,,,,,73,26.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Jacksonville State,Conference USA,4.5,53,,,56,28.6,,,,,,,,,55,24.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,South Florida,American Athletic,4,55,,,78,25.5,,,,,,,,,40,21.9,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Mississippi State,SEC,3.8,56,,,54,28.7,,,,,,,,,61,25.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Oregon State,Pac-12,3.8,56,,,37,31.6,,,,,,,,,78,27.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Clemson,ACC,3.3,58,,,100,22,,,,,,,,,28,19.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Cincinnati,Big 12,3,59,,,26,33.9,,,,,,,,,101,31.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Auburn,SEC,2.8,60,,,85,24.5,,,,,,,,,41,22.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Toledo,Mid-American,2.7,61,,,64,27.3,,,,,,,,,54,24.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Louisiana Tech,Sun Belt,2.2,62,,,67,27.1,,,,,,,,,55,24.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Virginia,ACC,2.1,63,,,82,25.3,,,,,,,,,45,23.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Kansas,Big 12,2,64,,,65,27.2,,,,,,,,,64,25.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Arizona State,Big 12,1.9,65,,,77,25.7,,,,,,,,,50,23.8,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Louisiana,Sun Belt,1.7,66,,,62,28.2,,,,,,,,,70,26.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Minnesota,Big Ten,1.3,67,,,102,21.8,,,,,,,,,37,20.9,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,UCF,Big 12,1.3,67,,,67,27.1,,,,,,,,,69,26.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Tulsa,American Athletic,1.1,69,,,53,28.8,,,,,,,,,77,27.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Air Force,Mountain West,1.1,69,,,60,28.3,,,,,,,,,79,27.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,UTSA,American Athletic,0.9,71,,,38,31.5,,,,,,,,,97,30.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Georgia Southern,Sun Belt,0.8,72,,,72,26.2,,,,,,,,,60,24.8,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,West Virginia,Big 12,-0.2,73,,,23,34.6,,,,,,,,,124,35.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Ohio,Mid-American,-0.4,74,,,83,24.7,,,,,,,,,61,25.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,UConn,FBS Independents,-0.8,75,,,48,29.8,,,,,,,,,97,30.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Western Michigan,Mid-American,-0.9,76,,,93,22.8,,,,,,,,,52,24.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Florida Atlantic,American Athletic,-1.3,77,,,29,33.3,,,,,,,,,124,35.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Vanderbilt,SEC,-1.5,78,,,78,25.5,,,,,,,,,81,27.7,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.7
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Army,American Athletic,-2.1,79,,,47,29.9,,,,,,,,,109,32.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Maryland,Big Ten,-2.1,79,,,71,26.7,,,,,,,,,88,28.6,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Iowa State,Big 12,-2.3,81,,,70,26.8,,,,,,,,,93,29.6,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,NC State,ACC,-2.3,81,,,60,28.3,,,,,,,,,99,30.8,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Purdue,Big Ten,-2.4,83,,,52,28.9,,,,,,,,,108,32,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.7
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Michigan State,Big Ten,-2.4,83,,,105,21.5,,,,,,,,,55,24.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Syracuse,ACC,-2.7,85,,,80,25.4,,,,,,,,,81,27.7,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,East Carolina,American Athletic,-2.8,86,,,106,21.4,,,,,,,,,58,24.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Navy,American Athletic,-3.1,87,,,45,30,,,,,,,,,112,32.6,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Arkansas,SEC,-3.6,88,,,89,24.1,,,,,,,,,83,27.8,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,UNLV,Mountain West,-3.7,89,,,76,25.8,,,,,,,,,95,29.7,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,App State,Sun Belt,-4.5,90,,,91,23.6,,,,,,,,,87,28.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Utah State,Pac-12,-4.7,91,,,119,18.2,,,,,,,,,42,22.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Miami (OH),Mid-American,-4.9,92,,,92,23.5,,,,,,,,,85,28.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Wyoming,Mountain West,-5,93,,,112,20.2,,,,,,,,,68,25.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Colorado,Big 12,-5.2,94,,,101,21.9,,,,,,,,,74,26.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Boston College,ACC,-5.4,95,,,97,22.3,,,,,,,,,76,27.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Georgia State,Sun Belt,-6.1,96,,,65,27.2,,,,,,,,,118,33.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Nevada,Mountain West,-6.4,97,,,118,18.3,,,,,,,,,63,25.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Arkansas State,Sun Belt,-7,98,,,83,24.7,,,,,,,,,103,31.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Georgia Tech,ACC,-8.1,99,,,85,24.5,,,,,,,,,110,32.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,UAB,American Athletic,-8.2,100,,,116,18.8,,,,,,,,,79,27.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Coastal Carolina,Sun Belt,-8.2,100,,,94,22.6,,,,,,,,,100,31,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,San Diego State,Pac-12,-8.4,102,,,94,22.6,,,,,,,,,106,31.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Massachusetts,Mid-American,-8.8,103,,,110,20.3,,,,,,,,,91,28.9,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Florida International,Conference USA,-8.9,104,,,123,17,,,,,,,,,64,25.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Rutgers,Big Ten,-9.2,105,,,80,25.4,,,,,,,,,124,35.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Delaware,Conference USA,-9.2,105,,,72,26.2,,,,,,,,,123,35,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Temple,American Athletic,-9.6,107,,,88,24.2,,,,,,,,,119,34,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Kennesaw State,Conference USA,-10,108,,,103,21.6,,,,,,,,,105,31.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Hawai'i,Mountain West,-10.3,109,,,120,18.1,,,,,,,,,86,28.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,San José State,Mountain West,-10.7,110,,,128,15.5,,,,,,,,,70,26.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Colorado State,Pac-12,-11,111,,,51,29.4,,,,,,,,,137,40.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Buffalo,Mid-American,-11.1,112,,,121,17.4,,,,,,,,,89,28.7,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,California,ACC,-11.4,113,,,108,20.4,,,,,,,,,102,31.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Tulane,American Athletic,-11.7,114,,,115,19,,,,,,,,,103,31.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Troy,Sun Belt,-12.1,115,,,122,17.2,,,,,,,,,90,28.8,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,South Alabama,Sun Belt,-12.3,116,,,75,25.9,,,,,,,,,134,37.8,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Marshall,Sun Belt,-12.4,117,,,98,22.2,,,,,,,,,122,34.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.2
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Central Michigan,Mid-American,-13.2,118,,,124,16.5,,,,,,,,,92,29.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Stanford,ACC,-13.3,119,,,103,21.6,,,,,,,,,120,34.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Western Kentucky,Conference USA,-13.7,120,,,110,20.3,,,,,,,,,120,34.3,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Missouri State,Conference USA,-14,121,,,114,19.3,,,,,,,,,113,32.8,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Old Dominion,Sun Belt,-14.3,122,,,134,13,,,,,,,,,75,26.6,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.8
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Middle Tennessee,Conference USA,-14.5,123,,,107,21.1,,,,,,,,,130,36,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Washington State,Pac-12,-14.5,123,,,127,15.7,,,,,,,,,93,29.6,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Southern Miss,Sun Belt,-15.9,125,,,108,20.4,,,,,,,,,129,35.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.7
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,New Mexico State,Conference USA,-16.1,126,,,125,16.1,,,,,,,,,107,31.6,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Rice,American Athletic,-16.1,126,,,113,19.7,,,,,,,,,128,35.4,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.5
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Eastern Michigan,Mid-American,-16.9,128,,,126,15.8,,,,,,,,,113,32.8,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.1
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Bowling Green,Mid-American,-19.3,129,,,131,14.2,,,,,,,,,117,33.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.3
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Ball State,Mid-American,-19.5,130,,,117,18.4,,,,,,,,,133,37.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Sam Houston,Conference USA,-20.7,131,,,135,12.3,,,,,,,,,111,32.5,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.6
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Kent State,Mid-American,-22.1,132,,,136,11.8,,,,,,,,,115,33.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.8
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,UL Monroe,Sun Belt,-23.2,133,,,130,14.6,,,,,,,,,132,37,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.8
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Akron,Mid-American,-24.8,134,,,132,14.1,,,,,,,,,135,38.1,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.7
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Sacramento State,Mid-American,-24.9,135,,,138,10.7,,,,,,,,,127,35.2,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,UTEP,Mountain West,-26.3,136,,,137,11.3,,,,,,,,,131,36.8,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.7
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Northern Illinois,Mountain West,-26.9,137,,,133,13.7,,,,,,,,,136,40,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.7
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,Charlotte,American Athletic,-27.4,138,,,129,15,,,,,,,,,138,42,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",-0.4
+2026-11-10T20:26:49+00:00,2026,11,sp_plus,2026,nationalAverages,,0.8260869565217391,,,,,26.679710144927537,,,,,,,,,,25.854347826086958,,,,,,,"{'total': None, 'frontSeven': None, 'db': None}",0.002173913043478261
